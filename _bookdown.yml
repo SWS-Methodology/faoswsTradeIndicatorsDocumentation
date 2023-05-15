@@ -1,8 +1,8 @@
-book_filename: "Value of Agriculture Production Documentation"
+book_filename: "Trade Indices Numbers Documentation"
 output_dir: docs
 delete_merged_file: true
-edit: https://github.com/SWS-Methodology/faoswsValueOfAgriculturalProductionDocumentation/edit/master/%s
-view: https://github.com/SWS-Methodology/faoswsValueOfAgriculturalProductionDocumentation/blob/master/%s
+edit: https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/edit/master/%s
+view: https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/blob/master/%s
 language:
   ui:
     chapter_name: "Chapter "
