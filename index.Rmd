@@ -9,11 +9,11 @@ header-includes:
 output:
 latex_engine: tinytex
 documentclass: book
-url: https://github.com/SWS-Methodology/faoswsValueOfAgriculturalProductionDocumentation
+url: https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation
 favicon: ./images/FAO_logo.svg.ico
 cover-image: ./images/FAO_logo.svg.png
 description:
-github-repo: https://github.com/SWS-Methodology/faoswsValueOfAgriculturalProductionDocumentation
+github-repo: https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation
 ---
 
 # About
