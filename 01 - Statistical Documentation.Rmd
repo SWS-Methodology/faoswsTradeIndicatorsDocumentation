@@ -1,19 +1,6 @@
-# Value Of Agricultural Production - Methodology
+# Trade Indices Numbers - Methodology
 
-Production and producer prices are defined according to established FAO standards. For instance the concept of production may change according to the specific commodity and can be summarized as follows:
-
-**Crop production data** refer to the actual harvested production from field or orchard and gardens, excluding harvesting and threshing losses and the part of crop non harvested. Production includes also the quantities sold in the market (marketed production) and the quantities consumed by the producers (autoconsumption). Crop production is stored in metric tonnes.
-
-**Livestock production data** is more commodity-specific, evaluated by weights and adjusted by conversion factors to provide comparable data.
-
-**Producer prices** refers to the prices received by farmers per unit, usually a metric ton of product. The producer prices are also often defined "farm gate prices", and should includes all the costs incurred by the farmers to produce the commodity and its own profit.
-
-Various approaches are considered for the definition of *Agricultural Production*, spacing from *gross* concept to *net* depending on the treatment of the double-counting error. The latter is defined as the error that incur when we do not remove inputs used during the production cycle. Agricultural inputs are indeed divided in three categories :
-
-1.  commodities required as inputs for their own production, such as seed or hatching eggs;
-2.  inputs of other agricultural commodities as those used for feeding livestock;
-3.  non-agricultural inputs such fertilizers or pesticides.
-
+The trade index numbers calculated by the Food and Agriculture Organization (FAO) are statistical measures used to track and analyze changes in international agricultural trade. These index numbers provide a comprehensive view of the global agricultural trade trends by comparing trade volumes and values over time. The formula used for calculating these index numbers is based on the Laspeyres formula, a widely used method for constructing price or quantity indices. The Laspeyres formula compares the current period's trade values or quantities with those of a chosen reference period, calculating the ratio of the current period's trade to the reference period's trade, multiplied by 100 to express the result as a percentage. This ratio represents the relative change in trade over time. By applying the Laspeyres formula to agricultural trade data, FAO generates trade index numbers that capture the changes in trade volumes or values for specific commodities or commodity groups, facilitating meaningful comparisons and analysis of global agricultural trade patterns.
 ## Gross Production Value
 
 Value of gross production is calculated by multiplying gross production (in tonnes) by production prices at farm gate. In this phase of aggregation the overall value of production in considered. Indeed a double-counting error rise if we do not remove seeds and feed used within the agricultural sector, we refer then to this value as "gross production".\
