@@ -110,20 +110,21 @@
 <li class="chapter" data-level="3.2.1" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#ti---aggregation-module"><i class="fa fa-check"></i><b>3.2.1</b> TI - Aggregation Module</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#parameters"><i class="fa fa-check"></i><b>3.3</b> Parameters</a></li>
-<li class="chapter" data-level="3.4" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#execution"><i class="fa fa-check"></i><b>3.4</b> Execution</a></li>
+<li class="chapter" data-level="3.4" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#additional-notes"><i class="fa fa-check"></i><b>3.4</b> Additional Notes</a></li>
+<li class="chapter" data-level="3.5" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#execution"><i class="fa fa-check"></i><b>3.5</b> Execution</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>4</b> SWS Resources</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="resources.html"><a href="resources.html#code-lists"><i class="fa fa-check"></i><b>4.1</b> Code Lists</a></li>
 <li class="chapter" data-level="4.2" data-path="resources.html"><a href="resources.html#datatables"><i class="fa fa-check"></i><b>4.2</b> Data Tables</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="resources.html"><a href="resources.html#base-year-parameter"><i class="fa fa-check"></i><b>4.2.1</b> Base Year Parameter</a></li>
-<li class="chapter" data-level="4.2.2" data-path="resources.html"><a href="resources.html#supplementary-international-dollar"><i class="fa fa-check"></i><b>4.2.2</b> Supplementary International Dollar</a></li>
-<li class="chapter" data-level="4.2.3" data-path="resources.html"><a href="resources.html#countrytab"><i class="fa fa-check"></i><b>4.2.3</b> Value of Production - Country</a></li>
-<li class="chapter" data-level="4.2.4" data-path="resources.html"><a href="resources.html#countrygrouptab"><i class="fa fa-check"></i><b>4.2.4</b> Value of Production - Country Group</a></li>
-<li class="chapter" data-level="4.2.5" data-path="resources.html"><a href="resources.html#itemtab"><i class="fa fa-check"></i><b>4.2.5</b> Value of Production - Item</a></li>
-<li class="chapter" data-level="4.2.6" data-path="resources.html"><a href="resources.html#itemgrouptab"><i class="fa fa-check"></i><b>4.2.6</b> Value of Production - Item group</a></li>
-<li class="chapter" data-level="4.2.7" data-path="resources.html"><a href="resources.html#value-of-production---log"><i class="fa fa-check"></i><b>4.2.7</b> Value of Production - LOG</a></li>
+<li class="chapter" data-level="4.2.1" data-path="resources.html"><a href="resources.html#ti---base-year"><i class="fa fa-check"></i><b>4.2.1</b> TI - Base Year</a></li>
+<li class="chapter" data-level="4.2.2" data-path="resources.html"><a href="resources.html#ti---country-list"><i class="fa fa-check"></i><b>4.2.2</b> TI - Country List</a></li>
+<li class="chapter" data-level="4.2.3" data-path="resources.html"><a href="resources.html#ti---item-list"><i class="fa fa-check"></i><b>4.2.3</b> TI - Item List</a></li>
+<li class="chapter" data-level="4.2.4" data-path="resources.html"><a href="resources.html#aggregation"><i class="fa fa-check"></i><b>4.2.4</b> TI - Aggregation Table</a></li>
+<li class="chapter" data-level="4.2.5" data-path="resources.html"><a href="resources.html#ti---area-not-fobcif-multipliers"><i class="fa fa-check"></i><b>4.2.5</b> TI - area not FOB/CIF multipliers</a></li>
+<li class="chapter" data-level="4.2.6" data-path="resources.html"><a href="resources.html#ti---code-conversion-table"><i class="fa fa-check"></i><b>4.2.6</b> TI - Code conversion table</a></li>
+<li class="chapter" data-level="4.2.7" data-path="resources.html"><a href="resources.html#ti---log"><i class="fa fa-check"></i><b>4.2.7</b> TI - LOG</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -209,8 +210,23 @@ It is possible then to modify the values manually if the technical unit may need
 <p>The Filter parameters have been introduced to divide the calculation load among multiple tasks. It is highly recommended to use these parameters when dealing with a year range greater than twenty years. This is because the number of data points returned during the calculation exceeds the available memory in the task manager. By applying appropriate filters you can distribute the workload across multiple tasks, enabling faster and more efficient execution of the calculations.<br />
 </p>
 </div>
-<div id="execution" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Execution<a href="value-of-production-plugin.html#execution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="additional-notes" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Additional Notes<a href="value-of-production-plugin.html#additional-notes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Please note that due to recent adjustments made in the methodology to align the calculations with TCL Domain practices, there may be some differences between the final results obtained using the Trade Indices Plugin and the data disseminated on FAOSTAT. These adjustments are aimed at improving the accuracy and consistency of the calculations. Therefore, it is important to consider this information when comparing the results generated by the plugin with the data available on FAOSTAT.<br />
+For instance the plugin do not perform an intermediate aggregation of single items in order to group them under similar commodities.<br />
+<br />
+Some additional information about the CPC codes converted internally by the Plugin according to <code>TI - code converstion table</code> :<br />
+</p>
+<ul>
+<li><em>‘Beet Pulp’</em> item is saved under CPC code 39149.01 in FAOSTAT and code 39140.01 in SWS <em>(’ Beet Pulp ’)</em></li>
+<li><em>‘Fine animal hair, n.e.c.’</em> is saved under CPC code 02943.90 in FAOSTAT and code 02943.02 in SWS <em>(’ Fine hair, n.e. ’)</em></li>
+<li><em>‘Juice of fruits n.e.c.’</em> is saved under CPC code 21439.90 in FAOSTAT and code in SWS <em>(’ Juice of fruits n.e. ’)</em></li>
+<li><em>‘Rice, paddy (rice milled equivalent)’</em> is saved under CPC code F0030 in FAOSTAT and code 23161.02 in SWS <em>(’ Rice, Milled ’)</em></li>
+</ul>
+<p>All the items mentioned above will be pulled from SWS with their corresponding CPC codes. However, when saving the results, they will be stored with the correct CPC codes used for dissemination purposes. This ensures that the data is aligned with the standardized coding system and can be easily compared and referenced with other datasets.</p>
+</div>
+<div id="execution" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Execution<a href="value-of-production-plugin.html#execution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Note that The plugin is not a Core plugin and run within a session. Before running the plugin it is mandatory to create a session inside <code>Trade Indices Numbers</code> Dataset of <code>Trade</code> Domain with the desired Elements and Years in which you are interested in.</p>
 <ol style="list-style-type: decimal">
 <li>Go to the Statistical Working system and select a new query:</li>

@@ -29,18 +29,11 @@ Below a detailed description of all the datatable used in the Value of Productio
   * **Usage :** Used to define the base year. The plugin will calculate the three-year base period around the specified value. 
   
   <br>
-
-```{r echo=FALSE}
-name = c("Base Year")
-
-desc = c("Base Year of the Trade Indices Numbers Plugin")
-
-
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Input parameter for the base year range.", col.names = c("Field", "Description") )
-
-```
-
-<br>
+  
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|Base Year|Base Year of the Trade Indices Numbers Plugin|
+  
 
 ### TI - Country List
 
@@ -50,25 +43,14 @@ knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Input para
   
   <br>
 
-```{r echo=FALSE}
-name = c(
-"Country Name",
-"M49 Code",
-"Start Year",
-"End Year"
-)
-
-desc = c(
-'Extended name of the Country',
-'Area Code M49',
-'Stasting validity year',
-'Ending validity year'
-)
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|Country Name|Extended name of the Country|
+|M49 Code|Area Code M49|
+|Start Year|Stasting validity year|
+|End Year|Ending validity year|
 
 
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Country List data fields summary.", col.names = c("Field", "Description") )
-
-```
 
 <br>
 
@@ -79,22 +61,13 @@ knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Country Li
   * **Usage :** Used to define the items list for which the trade indices are calculated .
   
   <br>
-
-```{r echo=FALSE}
-name = c(
-"Item Name",
-"CPC code"
-)
-
-desc = c(
-'Name of the item',
-'Corresponding CPC item code'
-)
+  
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|Item Name|Name of the item|
+|CPC code|Corresponding CPC item code|
 
 
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Item list data fields summary.", col.names = c("Field", "Description") )
-
-```
 
 <br>
 
@@ -105,32 +78,16 @@ knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Item list 
   * **Usage :** Used to define the aggregate composition for regions and items.
   
   <br>
-
-```{r echo=FALSE}
-name = c(
-"Variable Type",
-"Variable Group code",
-"Variable Code",
-"Variable Element",
-"Factor",
-"Variable Group Name",
-"Variable Name"
-)
-
-desc = c(
-'Type of group variable (Area/Item)',  
-'FAOSTAT group code',
-'Code of single item/country',
-'Specific element for which the group composition may change. If not specified it will be consideres as the default composition',
-'Factor for aggregation',
-'Name of the Group',
-'Name of the single item/country'
-)
-
-
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Aggregation table fields summary.", col.names = c("Field", "Description") )
-
-```
+  
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|Variable Type|	Type of group variable (Area/Item)|
+|Variable Group code|	FAOSTAT group code|
+|Variable Code|	Code of single item/country|
+|Variable Element|	Specific element for which the group composition may change. If not specified it will be consideres as the default composition|
+|Factor|	Factor for aggregation|
+|Variable Group Name|	Name of the Group|
+|Variable Name|	Name of the single item/country|
 
 <br>
 
@@ -142,27 +99,15 @@ knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Aggregatio
   
   <br>
 
-```{r echo=FALSE}
-name = c(
-  "Area Code",
-  "Area Code M49",
-  "Start Year",
-  "End Year",
-  "Multiplier"
-)
-
-desc = c(
-  "FCL Code, can be omitted",
-  "M49 code",
-  "Starting year of validity period",
-  "Ending year of validity period",
-  "Multiplier to apply"
-)
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|Area Code	|FCL Code, can be omitted|
+|Area Code M49	|M49 code|
+|Start Year	|Starting year of validity period|
+|End Year	|Ending year of validity period|
+|Multiplier	|Multiplier to apply|
 
 
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "FOB/CIF Multipliers fields summary.", col.names = c("Field", "Description") )
-
-```
 
 <br>
 
@@ -174,24 +119,11 @@ knitr::kable(data.frame(Field= name, Description= desc ) , caption = "FOB/CIF Mu
   
   <br>
 
-```{r echo=FALSE}
-name = c("FAOSTAT Code",
-         "SWS Code",
-         "Note"
-)
-
-desc = c(
-         "Correct CPC Code used in FAOSTAT",
-         "CPC Code used in SWS that contain data",
-         "Describing notes"
-         )
-
-
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Conversion table fields summary.", col.names = c("Field", "Description") )
-
-```
-
-<br>
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|FAOSTAT Code	|Correct CPC Code used in FAOSTAT|
+|SWS Code	|CPC Code used in SWS that contain data|
+|Note	|Describing notes|
 
 ### TI - LOG
 
@@ -201,34 +133,15 @@ knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Conversion
   
   <br>
 
-```{r echo=FALSE}
-name = c("User",
-         "Execution Date",
-         "Base Year Parameter",
-         "Years Computed",
-         "Source input data",
-         "Import/Export Filter Parameter",
-         "Lines writed",
-         "Lines omitted",
-         "Lines discarded",
-         "Time Elapsed"
-         
-)
-
-desc = c("User email of the user that run the plugin",
-         "Date of the execution",
-         "Base year selected",
-         "Years range of the plugin run",
-         "Source of Input data",
-         "Filter selection",
-         "Data points writed by the plugin",
-         "Data points not updated by the plugin",
-         "Data points not writed by the plugin",
-         "Total time to complete the Task"
-         
-)
-
-
-knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Item list data fields summary.", col.names = c("Field", "Description") )
-
-```
+|Field|Description|
+|:------------------|:--------------------------------------------------------------|
+|User	|User email of the user that run the plugin|
+|Execution Date	|Date of the execution|
+|Base Year Parameter	|Base year selected|
+|Years Computed	|Years range of the plugin run|
+|Source input data	|Source of Input data|
+|Import/Export Filter Parameter	|Filter selection|
+|Lines writed	|Data points writed by the plugin|
+|Lines omitted	|Data points not updated by the plugin|
+|Lines discarded	|Data points not writed by the plugin|
+|Time Elapsed	|Total time to complete the Task|
