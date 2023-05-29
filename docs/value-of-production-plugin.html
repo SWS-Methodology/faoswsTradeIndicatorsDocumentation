@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Value of Production Plugin | Trade Indices Numbers</title>
+  <meta name="description" content="Chapter 3 Value of Production Plugin | Trade Indices Numbers" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Value of Production Plugin | Trade Indices Numbers" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/./images/FAO_logo.svg.png" />
+  
+  <meta name="github-repo" content="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Value of Production Plugin | Trade Indices Numbers" />
+  
+  
+  <meta name="twitter:image" content="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/./images/FAO_logo.svg.png" />
+
+<meta name="author" content="ivan.sortino@fao.org" />
+
+
+<meta name="date" content="2023-05-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="./images/FAO_logo.svg.ico" type="image/x-icon" />
+<link rel="prev" href="methodology.html"/>
+<link rel="next" href="resources.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation">Trade Indices Numbers</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#module-workflow"><i class="fa fa-check"></i><b>1.1</b> Module Workflow</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#build-up-data-for-validation"><i class="fa fa-check"></i><b>1.2</b> Build up data for validation</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#sws-implementation-procedure"><i class="fa fa-check"></i><b>1.3</b> SWS implementation procedure</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#input-of-the-plugin"><i class="fa fa-check"></i><b>1.4</b> Input of the Plugin</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#output-of-the-plugin"><i class="fa fa-check"></i><b>1.5</b> Output of the plugin</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>2</b> Trade Indices Numbers - Methodology</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="methodology.html"><a href="methodology.html#base-periode-quantities"><i class="fa fa-check"></i><b>2.1</b> Base periode quantities</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="methodology.html"><a href="methodology.html#base-import-quantity"><i class="fa fa-check"></i><b>2.1.1</b> Base Import Quantity</a></li>
+<li class="chapter" data-level="2.1.2" data-path="methodology.html"><a href="methodology.html#base-export-quantity"><i class="fa fa-check"></i><b>2.1.2</b> Base Export Quantity</a></li>
+<li class="chapter" data-level="2.1.3" data-path="methodology.html"><a href="methodology.html#import-value-base-period-quantity"><i class="fa fa-check"></i><b>2.1.3</b> Import Value Base Period Quantity</a></li>
+<li class="chapter" data-level="2.1.4" data-path="methodology.html"><a href="methodology.html#export-value-base-period-quantity"><i class="fa fa-check"></i><b>2.1.4</b> Export Value Base Period Quantity</a></li>
+<li class="chapter" data-level="2.1.5" data-path="methodology.html"><a href="methodology.html#import-value-base-period-price"><i class="fa fa-check"></i><b>2.1.5</b> Import Value Base Period Price</a></li>
+<li class="chapter" data-level="2.1.6" data-path="methodology.html"><a href="methodology.html#export-value-base-period-price"><i class="fa fa-check"></i><b>2.1.6</b> Export Value Base Period Price</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="methodology.html"><a href="methodology.html#trade-indices"><i class="fa fa-check"></i><b>2.2</b> Trade indices</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="methodology.html"><a href="methodology.html#import-value-index"><i class="fa fa-check"></i><b>2.2.1</b> Import Value Index</a></li>
+<li class="chapter" data-level="2.2.2" data-path="methodology.html"><a href="methodology.html#export-value-index"><i class="fa fa-check"></i><b>2.2.2</b> Export Value Index</a></li>
+<li class="chapter" data-level="2.2.3" data-path="methodology.html"><a href="methodology.html#import-unitvalue-index"><i class="fa fa-check"></i><b>2.2.3</b> Import Unit/Value Index</a></li>
+<li class="chapter" data-level="2.2.4" data-path="methodology.html"><a href="methodology.html#export-unitvalue-index"><i class="fa fa-check"></i><b>2.2.4</b> Export Unit/Value Index</a></li>
+<li class="chapter" data-level="2.2.5" data-path="methodology.html"><a href="methodology.html#import-quantity-index"><i class="fa fa-check"></i><b>2.2.5</b> Import Quantity Index</a></li>
+<li class="chapter" data-level="2.2.6" data-path="methodology.html"><a href="methodology.html#export-quantity-index"><i class="fa fa-check"></i><b>2.2.6</b> Export Quantity Index</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="methodology.html"><a href="methodology.html#fob-and-cif"><i class="fa fa-check"></i><b>2.3</b> FOB and CIF</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html"><i class="fa fa-check"></i><b>3</b> Value of Production Plugin</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#supportdt"><i class="fa fa-check"></i><b>3.1</b> Support Datatables</a></li>
+<li class="chapter" data-level="3.2" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#plugin-workflow"><i class="fa fa-check"></i><b>3.2</b> Plugin Workflow</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#ti---aggregation-module"><i class="fa fa-check"></i><b>3.2.1</b> TI - Aggregation Module</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#parameters"><i class="fa fa-check"></i><b>3.3</b> Parameters</a></li>
+<li class="chapter" data-level="3.4" data-path="value-of-production-plugin.html"><a href="value-of-production-plugin.html#execution"><i class="fa fa-check"></i><b>3.4</b> Execution</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>4</b> SWS Resources</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="resources.html"><a href="resources.html#code-lists"><i class="fa fa-check"></i><b>4.1</b> Code Lists</a></li>
+<li class="chapter" data-level="4.2" data-path="resources.html"><a href="resources.html#datatables"><i class="fa fa-check"></i><b>4.2</b> Data Tables</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="resources.html"><a href="resources.html#base-year-parameter"><i class="fa fa-check"></i><b>4.2.1</b> Base Year Parameter</a></li>
+<li class="chapter" data-level="4.2.2" data-path="resources.html"><a href="resources.html#supplementary-international-dollar"><i class="fa fa-check"></i><b>4.2.2</b> Supplementary International Dollar</a></li>
+<li class="chapter" data-level="4.2.3" data-path="resources.html"><a href="resources.html#countrytab"><i class="fa fa-check"></i><b>4.2.3</b> Value of Production - Country</a></li>
+<li class="chapter" data-level="4.2.4" data-path="resources.html"><a href="resources.html#countrygrouptab"><i class="fa fa-check"></i><b>4.2.4</b> Value of Production - Country Group</a></li>
+<li class="chapter" data-level="4.2.5" data-path="resources.html"><a href="resources.html#itemtab"><i class="fa fa-check"></i><b>4.2.5</b> Value of Production - Item</a></li>
+<li class="chapter" data-level="4.2.6" data-path="resources.html"><a href="resources.html#itemgrouptab"><i class="fa fa-check"></i><b>4.2.6</b> Value of Production - Item group</a></li>
+<li class="chapter" data-level="4.2.7" data-path="resources.html"><a href="resources.html#value-of-production---log"><i class="fa fa-check"></i><b>4.2.7</b> Value of Production - LOG</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Trade Indices Numbers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="value-of-production-plugin" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Value of Production Plugin<a href="value-of-production-plugin.html#value-of-production-plugin" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The general data flow of the plugin can be summarized as in picture <a href="value-of-production-plugin.html#fig:gendatflow">3.1</a> below :</p>
+<div class="figure"><span style="display:block;" id="fig:gendatflow"></span>
+<img src="images/Dataflow_1/Slide2.PNG" alt="" />
+<p class="caption">Figure 3.1:  Trade Indices Numbers Plugin Data Flow</p>
+</div>
+<p>The plugin requires the following input data: Import/Export Quantity (Elem. 5610/5910) and Import/Export Value (Elem. 5622/5922). You can choose the source of the data by specifying the source parameter in the plugin. The options include fetching the data from the ‘Disseminated Datasets’ Domain or the ‘Trade’ Domain. It is highly recommended to refer to the first source option during the validation procedure to ensure a better match with the existing FAOSTAT values.<br />
+To accurately parameterize the calculation, the plugin will read various support data tables described later in section <a href="value-of-production-plugin.html#supportdt">3.1</a>.<br />
+Subsequently, the input data will be passed to the Trade Indices plugin to calculate the various desired elements.<br />
+Before launching the Trade Indices Plugin, it is also possible to run the “TI Aggregation module” for calculating aggregated items and regional aggregates, checking their values, and potentially modifying them. These modified aggregates will then be automatically ingested by the Trade Indices Plugin.<br />
+Note that both modules are parameterized by the same support data table.<br />
+The output of the plugin will consist of the selected elements, and additionally, an informative log row will be added to the <code>TI - Log</code> datatable.</p>
+<div id="supportdt" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Support Datatables<a href="value-of-production-plugin.html#supportdt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Trade Indices Numbers calculation can be finely tuned modifying the following support datatables. Here a description of their usage.</p>
+<ul>
+<li><p><code>TI - Country List</code> : contains the list of countries for which the plugin will calculate the Trade Indices, does not contains regions of aggregates;</p></li>
+<li><p><code>TI - Item List</code> : contains the list of items for which the plugin will calculate the Trade Indices, does not contains aggregates;</p></li>
+<li><p><code>TI - Aggregation table</code> : Group composition for both regional, special regions and items aggregates. The composition as been aligned with the one currently used on thr <em>Trade Crops and Livestock</em> (TCL) Domain;</p></li>
+<li><p><code>TI - Area not FOB/CIF multipliers</code> : define the countries to which the FOB/CIF multiplier is applied, it is also possible to select the start and end year for which this multiplier is applied;</p></li>
+<li><p><code>TI - code converstion table</code> : map the correct CPC codes used in the <code>TI - Item List</code> table with the incorrect codes used in SWS that currently contain the input data needed;</p></li>
+<li><p><code>TI - Base year</code> : allows the user to select the base year for the calculations. The base period is calculated as the three year mean around the selected base year.<br />
+Note that both <em>Trade Indices Plugin</em> and <em>Ti - Aggregation module</em> will perform the calculation based on the same supporting datatables.</p></li>
+</ul>
+</div>
+<div id="plugin-workflow" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Plugin Workflow<a href="value-of-production-plugin.html#plugin-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A more detailed workflow of the plugin is reported in figure <a href="value-of-production-plugin.html#fig:workflow">3.2</a>.
+The Plugin works within a session, meaning that before running the plugin you will need to select in the query the countries, elements, items, and years that you want the Plugin to compute.</p>
+<div class="figure"><span style="display:block;" id="fig:workflow"></span>
+<img src="images/Dataflow_1/Slide3.PNG" alt="" />
+<p class="caption">Figure 3.2:  Trade Indices Numbers Plugin detailed Work Flow</p>
+</div>
+<p>The workflow can be summarized as follow:</p>
+<ol style="list-style-type: decimal">
+<li><p>The plugin read all its parameter, supporting datatables and selected query;</p></li>
+<li><p>It adjust the codelist according to <code>TI - code converstion table</code> in order to successfully pull data from SWS;</p></li>
+<li><p>Calculate, for input elements, aggregates values for <em>Regions, Special Regions, Excluding Intra-trade</em> according to <code>TI - Aggregation table</code>. It also check if some of the calculated values are already in the session and eventually update them if they differ;</p></li>
+<li><p>Apply FOB/CIF multipliers for the years specified in <code>TI - Area not FOB/CIF multipliers</code>;</p></li>
+<li><p>Calculate, for input elements, aggregates values for <em>Items aggregates</em> according to <code>TI - Aggregation table</code>. It also check if some of the calculated values are already in the session and eventually update them if they differ;</p></li>
+<li><p>Apply the methodology described in section <a href="methodology.html#methodology">2</a>;</p></li>
+<li><p>Save data in the session;</p></li>
+<li><p>Update <code>TI - Log Table</code> .</p></li>
+</ol>
+<div id="ti---aggregation-module" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> TI - Aggregation Module<a href="value-of-production-plugin.html#ti---aggregation-module" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The TI - Aggregation Module is and optional Plugin which scope is to calculate and save in the session all the different aggregates ingested by the Trade Indices Plugin.<br />
+The user is then able to run the plugin and check inside the session all the aggregates values computed for the input elements.<br />
+It is possible then to modify the values manually if the technical unit may need it.
+<em>The Trade Indices Plugin will compare the aggregates stored in the session and automatically incorporate any modifications made into the subsequent calculations.</em></p>
+</div>
+</div>
+<div id="parameters" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Parameters<a href="value-of-production-plugin.html#parameters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Trade Indices Plugin requires the following parameters, mandatory parameters are marked in bold:</p>
+<ul>
+<li><p><strong>SOURCE - Input DATA</strong> : mandatory parameter, allow to select if to pull data from <code>Trade</code> Domain or <code>Disseminated Dataset</code> Domain;</p></li>
+<li><p><em>Output</em> : Optional parameter, allow the user to select to seva in the session the results for all the items and countries specified in the parameter tables or just those selected in the query;</p></li>
+<li><p><em>Import/Export Filter</em> : Optional parameter, filter the calculation only for Import Elements (64, 65, 462, 464, 465) or Export Element (94, 95, 492, 494, 495);</p></li>
+<li><p><em>Year range Filter</em> : Optional parameter, allow to pass a range of year to perform the calculations. The range have to be in format YYYY-YYYY.
+<br></p></li>
+</ul>
+<p>The Filter parameters have been introduced to divide the calculation load among multiple tasks. It is highly recommended to use these parameters when dealing with a year range greater than twenty years. This is because the number of data points returned during the calculation exceeds the available memory in the task manager. By applying appropriate filters you can distribute the workload across multiple tasks, enabling faster and more efficient execution of the calculations.<br />
+</p>
+</div>
+<div id="execution" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Execution<a href="value-of-production-plugin.html#execution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Note that The plugin is not a Core plugin and run within a session. Before running the plugin it is mandatory to create a session inside <code>Trade Indices Numbers</code> Dataset of <code>Trade</code> Domain with the desired Elements and Years in which you are interested in.</p>
+<ol style="list-style-type: decimal">
+<li>Go to the Statistical Working system and select a new query:</li>
+</ol>
+<p><img src="images/runstep/Step%201.png" alt=" Create a New Query" />
+<br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Select <code>Trade</code> Domain and <code>Trade Indices Numbers</code> dataset :</li>
+<li>Select the desired Items, Elements, Countries, and Years then run the query :</li>
+</ol>
+<p><img src="images/runstep/Step%202.png" alt=" Run the Query" />
+<br></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Go to run plugin and select <em>Trade Indices Numbers</em> Plugin</li>
+<li>Select the source Domain through the <em>SOURCE - Input</em> Parameter</li>
+<li>Select _ Run Docker Slow_ to run the plugin</li>
+</ol>
+<p><img src="images/runstep/Step%208.webp" alt=" Run the Trade Indices Numbers Plugin" />
+<br></p>
+<ol start="7" style="list-style-type: decimal">
+<li>Check the Task status in the Task Manager.</li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="methodology.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/edit/master/02_Plugin_Documentation.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/blob/master/02_Plugin_Documentation.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

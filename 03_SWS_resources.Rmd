@@ -1,0 +1,234 @@
+# SWS Resources {#resources }
+
+This section enclose a detailed description of all the auxiliary resources needed by the modules to accomplish their calculation. It includes definition of code lists, used to define the various dimensions of data sets, and data tables. 
+
+## Code Lists
+
+Code lists describe the dimensions that compose the different datasets, they are designed by the users to store analytical results from SWS modules. Each dataset have a set of codes and their associated description, thus Codelists are used within different sets for the sake of standardization, visualization and metadata associated to each dimentions. \
+The code lists that describe `Trade Indices Numbers` dataset are the following : 
+
+  -  `GeographicAreaM49` :  Represent the spatial scale, it is composed by countries territories, , regional aggregates, regional special groups aggregates, global aggregates. 
+  
+  -  `measuredElementTrade ` : Represent the different element calculated by the plugin through the methodology mentioned above. 
+  
+  -   `measuredItemCPC ` : Those items wants to take measure of production. For example, commodities and commodity groups produced by a country;
+  
+  -  `timePointYears` : The time unit (year) data is displayed for.
+
+## Data Tables {#datatables}
+
+Datatables are flexible tool made available inside the Statistical Working System to store a wide range of useful information. They indeed provide a strong support to R module to record countries and items groups composition, to map conversion factors and to store different type of data. 
+Variable names (column names) of datatables are more flexible compared to those of datasets, they can accommodate all kind of names and are not strictly constrained by code lists or by the domain in which they are stored.
+Below a detailed description of all the datatable used in the Value of Production module. 
+
+
+### TI - Base Year
+
+  * **Datatable :** `ti_base_year`
+  * **Domain :** `Trade` 
+  * **Usage :** Used to define the base year. The plugin will calculate the three-year base period around the specified value. 
+  
+  <br>
+
+```{r echo=FALSE}
+name = c("Base Year")
+
+desc = c("Base Year of the Trade Indices Numbers Plugin")
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Input parameter for the base year range.", col.names = c("Field", "Description") )
+
+```
+
+<br>
+
+### TI - Country List
+
+  * **Datatable :** `ti_country_list`
+  * **Domain :** `Trade` 
+  * **Usage :** Contain the list of countries for which trade indices are calcualted.
+  
+  <br>
+
+```{r echo=FALSE}
+name = c(
+"Country Name",
+"M49 Code",
+"Start Year",
+"End Year"
+)
+
+desc = c(
+'Extended name of the Country',
+'Area Code M49',
+'Stasting validity year',
+'Ending validity year'
+)
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Country List data fields summary.", col.names = c("Field", "Description") )
+
+```
+
+<br>
+
+### TI - Item List
+
+  * **Datatable :** `ti_item_list`
+  * **Domain :** `Trade` 
+  * **Usage :** Used to define the items list for which the trade indices are calculated .
+  
+  <br>
+
+```{r echo=FALSE}
+name = c(
+"Item Name",
+"CPC code"
+)
+
+desc = c(
+'Name of the item',
+'Corresponding CPC item code'
+)
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Item list data fields summary.", col.names = c("Field", "Description") )
+
+```
+
+<br>
+
+### TI - Aggregation Table {#aggregation}
+
+  * **Datatable :** `ti_aggregation_table`
+  * **Domain :** `Trade`
+  * **Usage :** Used to define the aggregate composition for regions and items.
+  
+  <br>
+
+```{r echo=FALSE}
+name = c(
+"Variable Type",
+"Variable Group code",
+"Variable Code",
+"Variable Element",
+"Factor",
+"Variable Group Name",
+"Variable Name"
+)
+
+desc = c(
+'Type of group variable (Area/Item)',  
+'FAOSTAT group code',
+'Code of single item/country',
+'Specific element for which the group composition may change. If not specified it will be consideres as the default composition',
+'Factor for aggregation',
+'Name of the Group',
+'Name of the single item/country'
+)
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Aggregation table fields summary.", col.names = c("Field", "Description") )
+
+```
+
+<br>
+
+### TI - area not FOB/CIF multipliers
+
+  * **Datatable :** `ti_fob_cif_multipliers`
+  * **Domain :** `Trade` 
+  * **Usage :** Define Area for which FOB/CIF Multipliers must be applied.
+  
+  <br>
+
+```{r echo=FALSE}
+name = c(
+  "Area Code",
+  "Area Code M49",
+  "Start Year",
+  "End Year",
+  "Multiplier"
+)
+
+desc = c(
+  "FCL Code, can be omitted",
+  "M49 code",
+  "Starting year of validity period",
+  "Ending year of validity period",
+  "Multiplier to apply"
+)
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "FOB/CIF Multipliers fields summary.", col.names = c("Field", "Description") )
+
+```
+
+<br>
+
+### TI - Code conversion table
+
+  * **Datatable :** `ti_code_conversion`
+  * **Domain :** `Trade` 
+  * **Usage :** Map correct CPC code specified in TI - Item List, with the wrong one used in SWS. 
+  
+  <br>
+
+```{r echo=FALSE}
+name = c("FAOSTAT Code",
+         "SWS Code",
+         "Note"
+)
+
+desc = c(
+         "Correct CPC Code used in FAOSTAT",
+         "CPC Code used in SWS that contain data",
+         "Describing notes"
+         )
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Conversion table fields summary.", col.names = c("Field", "Description") )
+
+```
+
+<br>
+
+### TI - LOG
+
+  * **Datatable :** `ti_log`
+  * **Domain :** `Trade` 
+  * **Usage :** Provide a LOG history of plugin runs.
+  
+  <br>
+
+```{r echo=FALSE}
+name = c("User",
+         "Execution Date",
+         "Base Year Parameter",
+         "Years Computed",
+         "Source input data",
+         "Import/Export Filter Parameter",
+         "Lines writed",
+         "Lines omitted",
+         "Lines discarded",
+         "Time Elapsed"
+         
+)
+
+desc = c("User email of the user that run the plugin",
+         "Date of the execution",
+         "Base year selected",
+         "Years range of the plugin run",
+         "Source of Input data",
+         "Filter selection",
+         "Data points writed by the plugin",
+         "Data points not updated by the plugin",
+         "Data points not writed by the plugin",
+         "Total time to complete the Task"
+         
+)
+
+
+knitr::kable(data.frame(Field= name, Description= desc ) , caption = "Item list data fields summary.", col.names = c("Field", "Description") )
+
+```
