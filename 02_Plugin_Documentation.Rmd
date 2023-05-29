@@ -84,10 +84,10 @@ For instance the plugin do not perform an intermediate aggregation of single ite
 \
 Some additional information about the CPC codes converted internally by the Plugin according to `TI - code converstion table` :\
 
-* _'Beet Pulp'_ item is saved under CPC code 39149.01 in FAOSTAT and code 39140.01 in SWS _(' Beet Pulp ')_
-* _'Fine animal hair, n.e.c.'_ is saved under CPC code 02943.90 in FAOSTAT and code 02943.02 in SWS _(' Fine hair, n.e. ')_
-* _'Juice of fruits n.e.c.'_ is saved under CPC code 21439.90 in FAOSTAT and code  in SWS _(' Juice of fruits n.e. ')_
-* _'Rice, paddy (rice milled equivalent)'_ is saved under CPC code F0030 in FAOSTAT and code 23161.02 in SWS _(' Rice, Milled ')_
+* _'Beet Pulp'_ item is saved under CPC code 39149.01 in FAOSTAT and code 39140.01 in SWS _('Beet Pulp')_
+* _'Fine animal hair, n.e.c.'_ is saved under CPC code 02943.90 in FAOSTAT and code 02943.02 in SWS _('Fine hair, n.e.')_
+* _'Juice of fruits n.e.c.'_ is saved under CPC code 21439.90 in FAOSTAT and code  in SWS _('Juice of fruits n.e.')_
+* _'Rice, paddy (rice milled equivalent)'_ is saved under CPC code F0030 in FAOSTAT and code 23161.02 in SWS _('Rice, Milled')_
 
 All the items mentioned above will be pulled from SWS with their corresponding CPC codes. However, when saving the results, they will be stored with the correct CPC codes used for dissemination purposes. This ensures that the data is aligned with the standardized coding system and can be easily compared and referenced with other datasets.
 
