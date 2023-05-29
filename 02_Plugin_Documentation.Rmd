@@ -93,7 +93,7 @@ All the items mentioned above will be pulled from SWS with their corresponding C
 
 ## Execution 
 
-Note that The plugin is not a Core plugin and run within a session. Before running the plugin it is mandatory to create a session inside `Trade Indices Numbers` Dataset of `Trade` Domain with the desired Elements and Years in which you are interested in.
+Please note that the Trade Indices Plugin is not a core plugin and runs within a session. Before running the plugin, it is mandatory to create a session inside the "Trade Indices Numbers" Dataset of the "Trade" Domain. In this session, you need to specify the desired elements and years that you are interested in. This step ensures that the plugin operates on the relevant data and produces accurate results based on your specific requirements.
 
   1. Go to the Statistical Working system and select a new query:
 
