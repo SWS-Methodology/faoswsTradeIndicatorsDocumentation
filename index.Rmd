@@ -35,9 +35,9 @@ To apply the methodology, support data are imported into different datatable in 
 
   - Item list is obtained from _Definitions and standards_ section of FAOSTAT ["Crops and livestock products"](https://www.fao.org/faostat/en/#data/TCL) dataset and uploaded into SWS [`TI - Item List`](#itemtab) datatable;
   
-  - Items and Countries groups list is obtained from _Definitions and standards_ section of FAOSTAT ["Value of Production"](https://www.fao.org/faostat/en/#data/TCL) dataset and uploaded into SWS [`TI - Aggregation Table`](#grouptab) datatable;
+  - Items and Countries groups list is obtained from _Definitions and standards_ section of FAOSTAT ["Value of Production"](https://www.fao.org/faostat/en/#data/TCL) dataset and uploaded into SWS [`TI - Aggregation Table`](#aggregationtab) datatable;
 
-  - Multipliers for area not FOB _(Free On Board)_ / CIF _(Cost, Insurance, Freight)_ are obtained from old methodology and uploaded on SWS [`TI - arean not FOB/CIF multipliers`](#notfobcif) datatable;
+  - Multipliers for area not FOB _(Free On Board)_ / CIF _(Cost, Insurance, Freight)_ are obtained from old methodology and uploaded on SWS [`TI - arean not FOB/CIF multipliers`](#FOBCIFtab) datatable;
   
 A detailed description of each supporting datatable is reported in [SWS resources](#datatables) section of this documentation. 
 
@@ -50,7 +50,7 @@ Note that after some changes have been applied to the methodology, results may d
 The plugin will work within a session, meaning that the user needs to select the elements and the years for which they intend to calculate the trade indices, then run the plugin within the new created session. 
 It is worth noting that for the sake of consistency with FAOSTAT item/country list and for calculation of the aggregates, the plugin will always calculate values for all the countries and items specified into the supporting data table `"TI - Country list"` and `"TI - Item list"`, the output can be filtered using the different parameters implemented.
 
-The module will pull its data directly within the working system, allowing the user to choose the source of data for Import or Export quantities For instance, if Disseminated Datasets source is not selected:
+The module will pull its data directly within the working system, allowing the user to choose the source of data for Import or Export quantities. For instance, if Disseminated Datasets source is not selected:
 
   - Import / Export quantities in tonnes (_element 5610/5910_) are pulled from  `Trade` domain, dataset `Total Trade (CPC)`;
 

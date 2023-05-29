@@ -1,4 +1,4 @@
-# Value of Production Plugin
+# Trad Indices Numbers - Plugin
 
 The general data flow of the plugin can be summarized as in picture \@ref(fig:gendatflow) below :
 
@@ -20,7 +20,7 @@ The Trade Indices Numbers calculation can be finely tuned modifying the followin
   
   * `TI - Item List` : contains the list of items for which the plugin will calculate the Trade Indices, does not contains aggregates; 
   
-  * `TI - Aggregation table` : Group composition for both regional, special regions and items aggregates. The composition as been aligned with the one currently used on thr _Trade Crops and Livestock_ (TCL) Domain;
+  * `TI - Aggregation table` : Group composition for both regional, special regions and items aggregates. The composition as been aligned with the one currently used on the _Trade Crops and Livestock_ (TCL) Domain;
   
   * `TI - Area not FOB/CIF multipliers` : define the countries to which the FOB/CIF multiplier is applied, it is also possible to select the start and end year for which this multiplier is applied;
   
@@ -115,4 +115,7 @@ Please note that the Trade Indices Plugin is not a core plugin and runs within a
 
   7. Check the Task status in the Task Manager. 
   
+  
+  ![(\#fig:run) Multiple Tasks running in Task Manager.](./images/runstep/task_manager.png)
+
   

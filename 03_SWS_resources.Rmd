@@ -35,7 +35,7 @@ Below a detailed description of all the datatable used in the Value of Productio
 |Base Year|Base Year of the Trade Indices Numbers Plugin|
   
 
-### TI - Country List
+### TI - Country List  {#countrytab}
 
   * **Datatable :** `ti_country_list`
   * **Domain :** `Trade` 
@@ -54,7 +54,7 @@ Below a detailed description of all the datatable used in the Value of Productio
 
 <br>
 
-### TI - Item List
+### TI - Item List {#itemtab}
 
   * **Datatable :** `ti_item_list`
   * **Domain :** `Trade` 
@@ -71,7 +71,7 @@ Below a detailed description of all the datatable used in the Value of Productio
 
 <br>
 
-### TI - Aggregation Table {#aggregation}
+### TI - Aggregation Table {#aggregationtab}
 
   * **Datatable :** `ti_aggregation_table`
   * **Domain :** `Trade`
@@ -91,7 +91,7 @@ Below a detailed description of all the datatable used in the Value of Productio
 
 <br>
 
-### TI - area not FOB/CIF multipliers
+### TI - area not FOB/CIF multipliers {#FOBCIFtab}
 
   * **Datatable :** `ti_fob_cif_multipliers`
   * **Domain :** `Trade` 

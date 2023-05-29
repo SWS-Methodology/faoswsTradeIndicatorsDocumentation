@@ -5,7 +5,7 @@ The formula used for calculating these index numbers is based on the Laspeyres f
 By applying the Laspeyres formula to agricultural trade data, FAO generates trade index numbers that capture the changes in trade volumes or values for specific commodities or commodity groups, facilitating meaningful comparisons and analysis of global agricultural trade patterns.
 
 
-## Base periode quantities
+## Base period quantities
 
 The base quantities and prices for the calculation of the indices follows the following formulas : 
 
