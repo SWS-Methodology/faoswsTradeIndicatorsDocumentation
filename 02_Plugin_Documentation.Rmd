@@ -1,4 +1,4 @@
-# Trad Indices Numbers - Plugin
+# Trade Indices Numbers - Plugin
 
 The general data flow of the plugin can be summarized as in picture \@ref(fig:gendatflow) below :
 
