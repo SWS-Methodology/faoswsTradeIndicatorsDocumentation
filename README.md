@@ -1,3 +1,3 @@
-Trade Indices Number Documentation.
+Documentation for the CLFS indicators.
 
 Written using R Bookdown.
