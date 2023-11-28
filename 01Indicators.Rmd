@@ -1,0 +1,194 @@
+
+# Indicators {#indicators}
+
+This section provides a comprehensive description of the 9 indicators included within this process.
+
+The formulation of the 9 indicators relies on a set of fundamental quantities. Hereinafter, the following notation is adopted:\
+- $Y$ for production.\
+- $M$ for imports.\
+- $X$ for exports.\
+- $N$ for the total number of countries.\
+- $\text{UVI}$ for Unit Value Index.\
+- $\text{GDP}$ for Gross Domestic Product.\
+
+These quantities may include subscripts and superscripts to further refine their meaning. Subscripts may represent an item $i$, an area $j$, and a time $t$. Right superscripts are employed to indicate whether the variable is expressed in terms of quantities ($q$) or values ($v$), or, if this is not applicable, to differentiate between imports ($M$) and exports ($X$). Additionally, the left superscript "$\text{agr}$" denotes the use of agricultural aggregates. 
+
+Table \@ref(tab:quantities) provides a comprehensive reference for all the fundamental quantities, along with their description and the list of indicators they are needed for. 
+
+| **Formulation**                          | **Description**                                             | **Indicators** |
+|:-------------------------------------------------:|:--------------------------------------------------------------------------------:|:-----------------------:|
+| $Y^q_{ij}$                                        | Production quantity of commodity $i$ for area $j$.                               | 1, 2                    |
+| $M^q_{ij}$ and $X^q_{ij}$                         | Import and export quantities of commodity $i$ for area $j$.                      | 1, 2                    |
+| $N^M_i$ and $N^X_i$                               | Total number of importing and exporting countries for commodity $i$.             | 7, 8                    |
+| $M^v_{ij}$                                        | Import value of commodity $i$ for area $j$.                                      | 7, 8                    |
+| $X^v_{ij}$                                        | Export value of commodity $i$ for area $j$.                                      | 7, 8, 9                 |
+| $M^q_{i[AB]}$ and $X^q_{i[AB]}$                   | Import and export quantities of commodity $i$ from area $A$ to area $B$.             | 4                       |
+| $^\text{agr}M^v_{j}$              | Import value of agricultural products for area $j$.                              | 5                       |
+| $^\text{agr}X^v_{j}$              | Export value of agricultural products for area $j$.                              | 3, 5, 9                 |
+| $\text{UVI}^M_{ij, t}$ and $\text{UVI}^X_{ij, t}$ | Import and export Unit Value Index of commodity $i$ for country $j$ at time $t$. | 6                       |
+| $\text{GDP}_j$                                    | Gross Domestic Product for area $j$.                                             | 3, 5                    |
+: (#tab:quantities) Reference table for the fundamental quantities (rows) used to compute the indicators. The first column presents their mathematical formulation, the second provides their description, and the third specifies the indicators they are employed to build.
+
+The following sections provide the formulation and a detailed description of each individual indicator.
+
+
+## Import Dependency Ratio
+
+The Import Dependency Ratio (IDR) for commodity $i$ and country $j$ is defined as
+
+```{=tex}
+\begin{equation} 
+\text{IDR}_{ij} = \frac{M^q_{ij} - X^q_{ij}}{Y^q_{ij} + M^q_{ij} - X^q_{ij}},
+(\#eq:idr)
+\end{equation} 
+```
+
+where $M^q_{ij}$ and $X^q_{ij}$ are the import and export quantities of commodity $i$ for area $j$, respectively, and $Y^q_{ij}$ is the production quantity of commodity $i$ for area $j$.
+
+This indicator measures a country's import dependency on a specific commodity. A higher ratio indicates that the country is more import dependent on that commodity, while negative values denote that the country is a net exporter. 
+
+
+## Self-Sufficiency Ratio
+
+The Self-Sufficiency Ratio (SSR) for commodity $i$ and country $j$ is defined as
+
+```{=tex}
+\begin{equation} 
+\text{SSR}_{ij} = \frac{Y^q_{ij}}{Y^q_{ij} + M^q_{ij} - X^q_{ij}},
+(\#eq:ssr)
+\end{equation} 
+```
+
+where $M^q_{ij}$ and $X^q_{ij}$ are the import and export quantities of commodity $i$ for area $j$, respectively, and $Y^q_{ij}$ is the production quantity of commodity $i$ for area $j$.
+
+The Self-Sufficiency Ratio shows the magnitude of production in relation to domestic supply. A higher ratio indicates that the country is more self-sufficient on that commodity, while a ratio less than $1$ implies that food production is insufficient to meet the population demand.
+
+By construction, the SSR and the IDR sum to $1$.
+
+
+## Share of Agricultural Exports to GDP
+
+The Share of Agricultural Exports to GDP (abbreviated with SAE in the following) is defined as
+
+```{=tex}
+\begin{equation} 
+\text{SAE}_j = 100 \cdot \frac{^{\text{agr}}X^v_{j}}{\text{GDP}_j},
+(\#eq:sae)
+\end{equation} 
+```
+
+where $^{\text{agr}}X^v_{j}$ is the export value of agricultural products for area $j$ and $\text{GDP}_j$ is the Gross Domestic Product for area $j$.
+
+The Share of Agricultural Exports to GDP shows the overall contribution of agricultural exports to GDP.
+
+
+## Bilateral Trade Discrepancy index
+
+The Bilateral Trade Discrepancy index (BTD) is a measure of the bilateral trade asymmetries or discrepancies.\
+For an importing country $A$, the BTD is defined as
+
+```{=tex}
+\begin{equation} 
+\text{BTD}_{iA}^M = \frac{M^q_{i[BA]} - X^q_{i[BA]}}{M^q_{i[BA]}},
+(\#eq:btdimp)
+\end{equation} 
+```
+
+where $M^q_{i[BA]}$ and $X^q_{i[BA]}$ are the import and export quantities of commodity $i$ from area $B$ to area $A$, respectively, indicating that goods flow from $B$ to $A$. In this case, the BTD quantifies the difference between the imports reported by $A$ from $B$ ($M^q_{i[BA]}$) and the exports reported by $B$ to $A$ ($X^q_{i[BA]}$), expressed as a proportion of the imports reported by $A$ from $B$.
+
+For an exporting country $A$, the BTD is defined as
+
+```{=tex}
+\begin{equation} 
+\text{BTD}_{iA}^X = \frac{M^q_{i[AB]} - X^q_{i[AB]}}{M^q_{i[AB]}},
+(\#eq:btdexp)
+\end{equation} 
+```
+
+where $M^q_{i[AB]}$ and $X^q_{i[AB]}$ are the import and export quantities of commodity $i$ from area $A$ to area $B$, respectively, indicating that goods flow from $A$ to $B$. In this case, the BTD quantifies the difference between the imports reported by $B$ from $A$ ($M^q_{i[AB]}$) and the exports reported by $A$ to $B$ ($X^q_{i[AB]}$) as a proportion of the imports reported by $B$ from $A$. Combining Equation \@ref(eq:btdimp) with Equation \@ref(eq:btdexp), it is straightforward to see that $\text{BTD}_{iA}^M = \text{BTD}_{iB}^X$ and $\text{BTD}_{iA}^X = \text{BTD}_{iB}^M$.
+
+The Bilateral Trade Discrepancy index provides a general understanding of the tendencies of under-reporting or over-reporting in international trade quantities between countries. The magnitude of the discrepancy serves as an indicator for the severity of the issue.
+
+When goods flow from $B$ to $A$, a positive value of the index $\text{BTD}_{iA}^M$ implies that the reported exports are lower than the reported imports. This suggests that either $A$ is over-reporting imports from $B$, $B$ is under-reporting exports to $A$, or both. Conversely, if $\text{BTD}_{iA}^M$ is negative, the reported exports exceed the reported imports, indicating that either $A$ is under-reporting imports from $B$, $B$ is over-reporting exports to $A$, or both.
+
+When goods flow from $A$ to $B$, a positive value of the index $\text{BTD}_{iA}^X$ implies that the reported exports are lower than the reported imports. This suggests that either $A$ is under-reporting exports to $B$, $B$ is over-reporting imports from $A$, or both. Conversely, if $\text{BTD}_{iA}^M$ is negative, the reported exports exceed the reported imports, indicating that either $A$ is over-reporting exports to $B$, $B$ is under-reporting imports from $A$, or both.
+
+
+## Agricultural Trade Openness index
+
+The Agricultural Trade Openness index (ATO) is defined as
+
+```{=tex}
+\begin{equation} 
+\text{ATO}_j = \frac{^{\text{agr}}M^v_{j} + ^{\text{agr}}X^v_{j}}{\text{GDP}_j},
+(\#eq:ato)
+\end{equation} 
+```
+
+where $^{\text{agr}}M^v_{j}$ and $^{\text{agr}}X^v_{j}$ are the import and export values of agricultural products for area $j$, respectively, and $\text{GDP}_j$ is the Gross Domestic Product for area $j$.
+
+The Agricultural Trade Openness index measures the importance of international trade in goods relative to the domestic economic output of an economy.
+
+
+## Terms of Trade index
+
+The Terms of Trade index (TOT) is defined as
+
+```{=tex}
+\begin{equation} 
+\text{TOT}_{ij, t} = \frac{\text{UVI}^X_{ij, t}}{\text{UVI}^M_{ij, t}} \cdot \frac{\text{UVI}^M_{ij, \overline{2015}}}{\text{UVI}^X_{ij, \overline{2015}}} \cdot 100,
+(\#eq:tot)
+\end{equation} 
+```
+
+where $\text{UVI}^M_{ij, t}$ and $\text{UVI}^X_{ij, t}$ are the import and export Unit Value Indices of commodity $i$ for country $j$ at time $t$, respectively, and $\text{UVI}^M_{ij, \overline{2015}}$ and $\text{UVI}^X_{ij, \overline{2015}}$ are these values' three-year averages centered in $2015$, which, in this case, serves as the base year.
+
+The Terms of Trade index indicates how much the relative price between exports and imports has changed with respect to the base year.
+
+
+## Import Market Concentration index
+
+The Import Market Concentration index (IMC) is defined as
+
+```{=tex}
+\begin{equation} 
+\text{IMC}_i = \frac{\sqrt{\sum_{j = 1}^{N^M_i} \left( \frac{M^v_{ij}}{M^v_{iW}}\right)^2} - \sqrt{\frac{1}{N^M_i}}}{1 - \sqrt{\frac{1}{N^M_i}}},
+(\#eq:imc)
+\end{equation} 
+```
+
+where $M^v_{ij}$ is the import value of commodity $i$ for area $j$, $M^v_{iW}$ is the import value of commodity $i$ for the area *World*, and $N^M_i$ is the total number of importing countries for commodity $i$. The calculation of $N^M_i$ relies on import quantities, and it involves applying country-specific thresholds to determine whether a particular country is classified as an importer of commodity $i$. When $N^M_i = 1$, the value of $\text{IMC}_i$ is conventionally set to $1$.
+
+The Import Market Concentration index measures, for each product, the level of import market concentration by country of destination. It allows assessing whether a large portion of commodity imports is acquired by a small number of countries or, conversely, if imports are evenly distributed among many countries.
+
+
+## Export Market Concentration index
+
+The Export Market Concentration index (EMC) is defined as
+
+```{=tex}
+\begin{equation} 
+\text{EMC}_i = \frac{\sqrt{\sum_{j = 1}^{N^X_i} \left( \frac{X^v_{ij}}{X^v_{iW}}\right)^2} - \sqrt{\frac{1}{N^X_i}}}{1 - \sqrt{\frac{1}{N^X_i}}},
+(\#eq:emc)
+\end{equation} 
+```
+
+where $X^v_{ij}$ is the export values of commodity $i$ for area $j$, $X^v_{iW}$ is the export value of commodity $i$ for the area *World*, and $N^X_i$ is the total number of exporting countries for commodity $i$. The calculation of $N^X_i$ relies on export quantities, and it involves applying country-specific thresholds to determine whether a particular country is classified as an exporter of commodity $i$. When $N^X_i = 1$, the value of $\text{EMC}_i$ is conventionally set to $1$.
+
+The Export Market Concentration index measures, for each product, the level of export market concentration by country of origin. It allows assessing whether a large portion of commodity exports is accounted for by a small number of countries or, conversely, if exports are evenly distributed among many countries.
+
+
+## Revealed Comparative Advantage index
+
+The Revealed Comparative Advantage index (RCA) is defined as
+
+```{=tex}
+\begin{equation} 
+\text{RCA}_{ij} = \frac{X^v_{ij}}{^{\text{agr}}X^v_j} \cdot \frac{^{\text{agr}}X^v_W}{X^v_{iW}},
+(\#eq:rca)
+\end{equation} 
+```
+
+where $X^v_{ij}$ and $X^v_{iW}$ are the export value of commodity $i$ for area $j$ and for the area *World*, respectively, while $^{\text{agr}}X^v_{j}$ and $^{\text{agr}}X^v_{W}$ are the corresponding aggregates of agricultural products.
+
+The Revealed Comparative Advantage index is a proxy for the country's export potential. The RCA indicates whether a country is expanding the range of products in which it possesses trade potential, as opposed to situations where the number of products that can be competitively exported remains static.

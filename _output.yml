@@ -4,5 +4,5 @@ bookdown::gitbook:
     toc:
 
       before: |
-        <li><a href="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation">Trade Indices Numbers</a></li>
+        <li><a href="https://github.com/SWS-Methodology/Trade_Indicators">Trade Indicators</a></li>
 

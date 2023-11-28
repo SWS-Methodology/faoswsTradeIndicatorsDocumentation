@@ -1,6 +1,6 @@
 .book .book-summary ul.summary li span {
   color: white;
-  opacity: .5;
+  opacity: 0.5;
 }
 p {
   line-height: 1.5em;
@@ -18,22 +18,24 @@ p {
   color: #FFFFFF;
   border-radius: 25px 25px 0px 0px;
   border-bottom: 0px;
-  background: #5191c8;
+  background: #228b22;
   font-size: 32pt;
   line-height: 65px;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#header .subtitle em {
+#header .subtitle {
   font-style: normal;
 }
 
 #header .author {
   margin: 0;
-  padding-left: 20px;
-  padding-bottom: 0em;
+  padding-left: 22px;
+  padding-bottom: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
   color: #FFFFFF;
-  background: #5191c8;
-  font-size: 18pt;
+  background: #1d771d;
+  font-size: 11pt;
   font-style: normal;
   font-weight: normal;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -42,12 +44,17 @@ p {
   font-style: normal;
 }
 
-#header address {
+#header .date em {
   font-style: normal;
+}
+
+#header .address {
+  font-style: normal;
+  font-size: 5pt;
   border-radius: 0px 0px 25px 25px;
   padding-left: 20px;
   color: #FFFFFF;
-  background: #5191c8;
+  background: ##FFFFFF;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -71,20 +78,20 @@ p {
 }
 
 h1, h2 {
-  border-bottom: 2px solid #5191c8;
+  border-bottom: 2px solid #1d771d;
 }
 
 h1, h2, h3, h4 {
-  color: #5191c8;
+  color: #228b22;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
-color: #5191c8;
+color: #228b22;
 }
 
 dt {
-  color: #5191c8;
+  color: #228b22;
 }
 
 dd {
@@ -144,7 +151,11 @@ ol {
 }
 
 .book .book-summary {
-  background-color: #5191c8;
+  background-color: #186218;
+}
+
+.summary a:hover {
+color: #228b22 !important;
 }
 
 .book .book-summary ul.summary li a {
@@ -153,13 +164,14 @@ ol {
 }
 
 .book .book-summary ul.summary li.active>a {
-  color: #edb621;
+  color: #FFFFFF;
+  font-weight: bolder;
+  letter-spacing: .2px;
 }
 
 /* color of the background of the selected topic or chapter */
 .book .book-summary ul.summary li a:hover {
   background-color: #FFFFFF;
-  color: #5191c8;
 }
 
 .book .book-summary .book-search {
@@ -168,7 +180,7 @@ ol {
 .book .book-summary .book-search input,
 .book .book-summary .book-search input:focus,
 .book .book-summary .book-search input:hover {
-  color: #edb621;
+  color: #FFFFFF;
 }
 
 .book .book-header, .book .book-summary {
@@ -210,3 +222,13 @@ ol {
     line-height: 1.3333333;
     border-radius: 6px;
 }
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #222;
+}
+
+/*.book .book-body .page-wrapper .page-inner section.normal a:hover {
+color: #b2c2d2; /* darker color when hovering 
+text-decoration: none;
+}
+*/

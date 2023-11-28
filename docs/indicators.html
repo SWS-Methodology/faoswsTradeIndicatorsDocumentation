@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Indicators | Trade indicators</title>
+  <meta name="description" content="This is the documentation for the Trade indicators." />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Indicators | Trade indicators" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+  <meta property="og:description" content="This is the documentation for the Trade indicators." />
+  <meta name="github-repo" content="https://github.com/SWS-Methodology/Trade_indicators" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Indicators | Trade indicators" />
+  
+  <meta name="twitter:description" content="This is the documentation for the Trade indicators." />
+  <meta name="twitter:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+
+<meta name="author" content="Author: Riccardo Giubilei" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="./images/FAO_logo.svg.ico" type="image/x-icon" />
+<link rel="prev" href="index.html"/>
+<link rel="next" href="inputdata.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://github.com/SWS-Methodology/Trade_Indicators">Trade Indicators</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#list-of-indicators"><i class="fa fa-check"></i><b>1.1</b> List of indicators</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>1.2</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="indicators.html"><a href="indicators.html"><i class="fa fa-check"></i><b>2</b> Indicators</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="indicators.html"><a href="indicators.html#import-dependency-ratio"><i class="fa fa-check"></i><b>2.1</b> Import Dependency Ratio</a></li>
+<li class="chapter" data-level="2.2" data-path="indicators.html"><a href="indicators.html#self-sufficiency-ratio"><i class="fa fa-check"></i><b>2.2</b> Self-Sufficiency Ratio</a></li>
+<li class="chapter" data-level="2.3" data-path="indicators.html"><a href="indicators.html#share-of-agricultural-exports-to-gdp"><i class="fa fa-check"></i><b>2.3</b> Share of Agricultural Exports to GDP</a></li>
+<li class="chapter" data-level="2.4" data-path="indicators.html"><a href="indicators.html#bilateral-trade-discrepancy-index"><i class="fa fa-check"></i><b>2.4</b> Bilateral Trade Discrepancy index</a></li>
+<li class="chapter" data-level="2.5" data-path="indicators.html"><a href="indicators.html#agricultural-trade-openness-index"><i class="fa fa-check"></i><b>2.5</b> Agricultural Trade Openness index</a></li>
+<li class="chapter" data-level="2.6" data-path="indicators.html"><a href="indicators.html#terms-of-trade-index"><i class="fa fa-check"></i><b>2.6</b> Terms of Trade index</a></li>
+<li class="chapter" data-level="2.7" data-path="indicators.html"><a href="indicators.html#import-market-concentration-index"><i class="fa fa-check"></i><b>2.7</b> Import Market Concentration index</a></li>
+<li class="chapter" data-level="2.8" data-path="indicators.html"><a href="indicators.html#export-market-concentration-index"><i class="fa fa-check"></i><b>2.8</b> Export Market Concentration index</a></li>
+<li class="chapter" data-level="2.9" data-path="indicators.html"><a href="indicators.html#revealed-comparative-advantage-index"><i class="fa fa-check"></i><b>2.9</b> Revealed Comparative Advantage index</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="inputdata.html"><a href="inputdata.html"><i class="fa fa-check"></i><b>3</b> Input data</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="inputdata.html"><a href="inputdata.html#dimensions-and-codelists"><i class="fa fa-check"></i><b>3.1</b> Dimensions and codelists</a></li>
+<li class="chapter" data-level="3.2" data-path="inputdata.html"><a href="inputdata.html#domains-and-datasets"><i class="fa fa-check"></i><b>3.2</b> Domains and datasets</a></li>
+<li class="chapter" data-level="3.3" data-path="inputdata.html"><a href="inputdata.html#datatables"><i class="fa fa-check"></i><b>3.3</b> Datatables</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="inputdata.html"><a href="inputdata.html#reporters"><i class="fa fa-check"></i><b>3.3.1</b> Reporter countries</a></li>
+<li class="chapter" data-level="3.3.2" data-path="inputdata.html"><a href="inputdata.html#keycommodities"><i class="fa fa-check"></i><b>3.3.2</b> Key commodities</a></li>
+<li class="chapter" data-level="3.3.3" data-path="inputdata.html"><a href="inputdata.html#thresholds"><i class="fa fa-check"></i><b>3.3.3</b> Thresholds</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="elements.html"><a href="elements.html"><i class="fa fa-check"></i><b>4</b> Input and output elements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="elements.html"><a href="elements.html#inputelements"><i class="fa fa-check"></i><b>4.1</b> Input elements</a></li>
+<li class="chapter" data-level="4.2" data-path="elements.html"><a href="elements.html#from-input-to-output-elements"><i class="fa fa-check"></i><b>4.2</b> From input to output elements</a></li>
+<li class="chapter" data-level="4.3" data-path="elements.html"><a href="elements.html#output-elements"><i class="fa fa-check"></i><b>4.3</b> Output elements</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plugins.html"><a href="plugins.html"><i class="fa fa-check"></i><b>5</b> Plugins</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="plugins.html"><a href="plugins.html#idr---ssr-plugin"><i class="fa fa-check"></i><b>5.1</b> IDR - SSR plugin</a></li>
+<li class="chapter" data-level="5.2" data-path="plugins.html"><a href="plugins.html#sae-ato-plugin"><i class="fa fa-check"></i><b>5.2</b> SAE-ATO plugin</a></li>
+<li class="chapter" data-level="5.3" data-path="plugins.html"><a href="plugins.html#btd-plugin"><i class="fa fa-check"></i><b>5.3</b> BTD plugin</a></li>
+<li class="chapter" data-level="5.4" data-path="plugins.html"><a href="plugins.html#tot"><i class="fa fa-check"></i><b>5.4</b> TOT plugin</a></li>
+<li class="chapter" data-level="5.5" data-path="plugins.html"><a href="plugins.html#imc-emc-plugin"><i class="fa fa-check"></i><b>5.5</b> IMC-EMC plugin</a></li>
+<li class="chapter" data-level="5.6" data-path="plugins.html"><a href="plugins.html#rca-plugin"><i class="fa fa-check"></i><b>5.6</b> RCA plugin</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Trade indicators</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="indicators" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Indicators<a href="indicators.html#indicators" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This section provides a comprehensive description of the 9 indicators included within this process.</p>
+<p>The formulation of the 9 indicators relies on a set of fundamental quantities. Hereinafter, the following notation is adopted:<br />
+- <span class="math inline">\(Y\)</span> for production.<br />
+- <span class="math inline">\(M\)</span> for imports.<br />
+- <span class="math inline">\(X\)</span> for exports.<br />
+- <span class="math inline">\(N\)</span> for the total number of countries.<br />
+- <span class="math inline">\(\text{UVI}\)</span> for Unit Value Index.<br />
+- <span class="math inline">\(\text{GDP}\)</span> for Gross Domestic Product.<br />
+</p>
+<p>These quantities may include subscripts and superscripts to further refine their meaning. Subscripts may represent an item <span class="math inline">\(i\)</span>, an area <span class="math inline">\(j\)</span>, and a time <span class="math inline">\(t\)</span>. Right superscripts are employed to indicate whether the variable is expressed in terms of quantities (<span class="math inline">\(q\)</span>) or values (<span class="math inline">\(v\)</span>), or, if this is not applicable, to differentiate between imports (<span class="math inline">\(M\)</span>) and exports (<span class="math inline">\(X\)</span>). Additionally, the left superscript “<span class="math inline">\(\text{agr}\)</span>” denotes the use of agricultural aggregates.</p>
+<p>Table <a href="indicators.html#tab:quantities">2.1</a> provides a comprehensive reference for all the fundamental quantities, along with their description and the list of indicators they are needed for.</p>
+<table>
+<caption><span id="tab:quantities">Table 2.1: </span> Reference table for the fundamental quantities (rows) used to compute the indicators. The first column presents their mathematical formulation, the second provides their description, and the third specifies the indicators they are employed to build.</caption>
+<colgroup>
+<col width="32%" />
+<col width="51%" />
+<col width="15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center"><strong>Formulation</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="center"><strong>Indicators</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(Y^q_{ij}\)</span></td>
+<td align="center">Production quantity of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">1, 2</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(M^q_{ij}\)</span> and <span class="math inline">\(X^q_{ij}\)</span></td>
+<td align="center">Import and export quantities of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">1, 2</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(N^M_i\)</span> and <span class="math inline">\(N^X_i\)</span></td>
+<td align="center">Total number of importing and exporting countries for commodity <span class="math inline">\(i\)</span>.</td>
+<td align="center">7, 8</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(M^v_{ij}\)</span></td>
+<td align="center">Import value of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">7, 8</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(X^v_{ij}\)</span></td>
+<td align="center">Export value of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">7, 8, 9</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(M^q_{i[AB]}\)</span> and <span class="math inline">\(X^q_{i[AB]}\)</span></td>
+<td align="center">Import and export quantities of commodity <span class="math inline">\(i\)</span> from area <span class="math inline">\(A\)</span> to area <span class="math inline">\(B\)</span>.</td>
+<td align="center">4</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(^\text{agr}M^v_{j}\)</span></td>
+<td align="center">Import value of agricultural products for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">5</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(^\text{agr}X^v_{j}\)</span></td>
+<td align="center">Export value of agricultural products for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">3, 5, 9</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\text{UVI}^M_{ij, t}\)</span> and <span class="math inline">\(\text{UVI}^X_{ij, t}\)</span></td>
+<td align="center">Import and export Unit Value Index of commodity <span class="math inline">\(i\)</span> for country <span class="math inline">\(j\)</span> at time <span class="math inline">\(t\)</span>.</td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\text{GDP}_j\)</span></td>
+<td align="center">Gross Domestic Product for area <span class="math inline">\(j\)</span>.</td>
+<td align="center">3, 5</td>
+</tr>
+</tbody>
+</table>
+<p>The following sections provide the formulation and a detailed description of each individual indicator.</p>
+<div id="import-dependency-ratio" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Import Dependency Ratio<a href="indicators.html#import-dependency-ratio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Import Dependency Ratio (IDR) for commodity <span class="math inline">\(i\)</span> and country <span class="math inline">\(j\)</span> is defined as</p>
+<span class="math display" id="eq:idr">\[\begin{equation}
+\text{IDR}_{ij} = \frac{M^q_{ij} - X^q_{ij}}{Y^q_{ij} + M^q_{ij} - X^q_{ij}},
+\tag{2.1}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(M^q_{ij}\)</span> and <span class="math inline">\(X^q_{ij}\)</span> are the import and export quantities of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>, respectively, and <span class="math inline">\(Y^q_{ij}\)</span> is the production quantity of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>.</p>
+<p>This indicator measures a country’s import dependency on a specific commodity. A higher ratio indicates that the country is more import dependent on that commodity, while negative values denote that the country is a net exporter.</p>
+</div>
+<div id="self-sufficiency-ratio" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Self-Sufficiency Ratio<a href="indicators.html#self-sufficiency-ratio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Self-Sufficiency Ratio (SSR) for commodity <span class="math inline">\(i\)</span> and country <span class="math inline">\(j\)</span> is defined as</p>
+<span class="math display" id="eq:ssr">\[\begin{equation}
+\text{SSR}_{ij} = \frac{Y^q_{ij}}{Y^q_{ij} + M^q_{ij} - X^q_{ij}},
+\tag{2.2}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(M^q_{ij}\)</span> and <span class="math inline">\(X^q_{ij}\)</span> are the import and export quantities of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>, respectively, and <span class="math inline">\(Y^q_{ij}\)</span> is the production quantity of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>.</p>
+<p>The Self-Sufficiency Ratio shows the magnitude of production in relation to domestic supply. A higher ratio indicates that the country is more self-sufficient on that commodity, while a ratio less than <span class="math inline">\(1\)</span> implies that food production is insufficient to meet the population demand.</p>
+<p>By construction, the SSR and the IDR sum to <span class="math inline">\(1\)</span>.</p>
+</div>
+<div id="share-of-agricultural-exports-to-gdp" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Share of Agricultural Exports to GDP<a href="indicators.html#share-of-agricultural-exports-to-gdp" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Share of Agricultural Exports to GDP (abbreviated with SAE in the following) is defined as</p>
+<span class="math display" id="eq:sae">\[\begin{equation}
+\text{SAE}_j = 100 \cdot \frac{^{\text{agr}}X^v_{j}}{\text{GDP}_j},
+\tag{2.3}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(^{\text{agr}}X^v_{j}\)</span> is the export value of agricultural products for area <span class="math inline">\(j\)</span> and <span class="math inline">\(\text{GDP}_j\)</span> is the Gross Domestic Product for area <span class="math inline">\(j\)</span>.</p>
+<p>The Share of Agricultural Exports to GDP shows the overall contribution of agricultural exports to GDP.</p>
+</div>
+<div id="bilateral-trade-discrepancy-index" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Bilateral Trade Discrepancy index<a href="indicators.html#bilateral-trade-discrepancy-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Bilateral Trade Discrepancy index (BTD) is a measure of the bilateral trade asymmetries or discrepancies.<br />
+For an importing country <span class="math inline">\(A\)</span>, the BTD is defined as</p>
+<span class="math display" id="eq:btdimp">\[\begin{equation}
+\text{BTD}_{iA}^M = \frac{M^q_{i[BA]} - X^q_{i[BA]}}{M^q_{i[BA]}},
+\tag{2.4}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(M^q_{i[BA]}\)</span> and <span class="math inline">\(X^q_{i[BA]}\)</span> are the import and export quantities of commodity <span class="math inline">\(i\)</span> from area <span class="math inline">\(B\)</span> to area <span class="math inline">\(A\)</span>, respectively, indicating that goods flow from <span class="math inline">\(B\)</span> to <span class="math inline">\(A\)</span>. In this case, the BTD quantifies the difference between the imports reported by <span class="math inline">\(A\)</span> from <span class="math inline">\(B\)</span> (<span class="math inline">\(M^q_{i[BA]}\)</span>) and the exports reported by <span class="math inline">\(B\)</span> to <span class="math inline">\(A\)</span> (<span class="math inline">\(X^q_{i[BA]}\)</span>), expressed as a proportion of the imports reported by <span class="math inline">\(A\)</span> from <span class="math inline">\(B\)</span>.</p>
+<p>For an exporting country <span class="math inline">\(A\)</span>, the BTD is defined as</p>
+<span class="math display" id="eq:btdexp">\[\begin{equation}
+\text{BTD}_{iA}^X = \frac{M^q_{i[AB]} - X^q_{i[AB]}}{M^q_{i[AB]}},
+\tag{2.5}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(M^q_{i[AB]}\)</span> and <span class="math inline">\(X^q_{i[AB]}\)</span> are the import and export quantities of commodity <span class="math inline">\(i\)</span> from area <span class="math inline">\(A\)</span> to area <span class="math inline">\(B\)</span>, respectively, indicating that goods flow from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>. In this case, the BTD quantifies the difference between the imports reported by <span class="math inline">\(B\)</span> from <span class="math inline">\(A\)</span> (<span class="math inline">\(M^q_{i[AB]}\)</span>) and the exports reported by <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> (<span class="math inline">\(X^q_{i[AB]}\)</span>) as a proportion of the imports reported by <span class="math inline">\(B\)</span> from <span class="math inline">\(A\)</span>. Combining Equation <a href="indicators.html#eq:btdimp">(2.4)</a> with Equation <a href="indicators.html#eq:btdexp">(2.5)</a>, it is straightforward to see that <span class="math inline">\(\text{BTD}_{iA}^M = \text{BTD}_{iB}^X\)</span> and <span class="math inline">\(\text{BTD}_{iA}^X = \text{BTD}_{iB}^M\)</span>.</p>
+<p>The Bilateral Trade Discrepancy index provides a general understanding of the tendencies of under-reporting or over-reporting in international trade quantities between countries. The magnitude of the discrepancy serves as an indicator for the severity of the issue.</p>
+<p>When goods flow from <span class="math inline">\(B\)</span> to <span class="math inline">\(A\)</span>, a positive value of the index <span class="math inline">\(\text{BTD}_{iA}^M\)</span> implies that the reported exports are lower than the reported imports. This suggests that either <span class="math inline">\(A\)</span> is over-reporting imports from <span class="math inline">\(B\)</span>, <span class="math inline">\(B\)</span> is under-reporting exports to <span class="math inline">\(A\)</span>, or both. Conversely, if <span class="math inline">\(\text{BTD}_{iA}^M\)</span> is negative, the reported exports exceed the reported imports, indicating that either <span class="math inline">\(A\)</span> is under-reporting imports from <span class="math inline">\(B\)</span>, <span class="math inline">\(B\)</span> is over-reporting exports to <span class="math inline">\(A\)</span>, or both.</p>
+<p>When goods flow from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>, a positive value of the index <span class="math inline">\(\text{BTD}_{iA}^X\)</span> implies that the reported exports are lower than the reported imports. This suggests that either <span class="math inline">\(A\)</span> is under-reporting exports to <span class="math inline">\(B\)</span>, <span class="math inline">\(B\)</span> is over-reporting imports from <span class="math inline">\(A\)</span>, or both. Conversely, if <span class="math inline">\(\text{BTD}_{iA}^M\)</span> is negative, the reported exports exceed the reported imports, indicating that either <span class="math inline">\(A\)</span> is over-reporting exports to <span class="math inline">\(B\)</span>, <span class="math inline">\(B\)</span> is under-reporting imports from <span class="math inline">\(A\)</span>, or both.</p>
+</div>
+<div id="agricultural-trade-openness-index" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Agricultural Trade Openness index<a href="indicators.html#agricultural-trade-openness-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Agricultural Trade Openness index (ATO) is defined as</p>
+<span class="math display" id="eq:ato">\[\begin{equation}
+\text{ATO}_j = \frac{^{\text{agr}}M^v_{j} + ^{\text{agr}}X^v_{j}}{\text{GDP}_j},
+\tag{2.6}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(^{\text{agr}}M^v_{j}\)</span> and <span class="math inline">\(^{\text{agr}}X^v_{j}\)</span> are the import and export values of agricultural products for area <span class="math inline">\(j\)</span>, respectively, and <span class="math inline">\(\text{GDP}_j\)</span> is the Gross Domestic Product for area <span class="math inline">\(j\)</span>.</p>
+<p>The Agricultural Trade Openness index measures the importance of international trade in goods relative to the domestic economic output of an economy.</p>
+</div>
+<div id="terms-of-trade-index" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Terms of Trade index<a href="indicators.html#terms-of-trade-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Terms of Trade index (TOT) is defined as</p>
+<span class="math display" id="eq:tot">\[\begin{equation}
+\text{TOT}_{ij, t} = \frac{\text{UVI}^X_{ij, t}}{\text{UVI}^M_{ij, t}} \cdot \frac{\text{UVI}^M_{ij, \overline{2015}}}{\text{UVI}^X_{ij, \overline{2015}}} \cdot 100,
+\tag{2.7}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(\text{UVI}^M_{ij, t}\)</span> and <span class="math inline">\(\text{UVI}^X_{ij, t}\)</span> are the import and export Unit Value Indices of commodity <span class="math inline">\(i\)</span> for country <span class="math inline">\(j\)</span> at time <span class="math inline">\(t\)</span>, respectively, and <span class="math inline">\(\text{UVI}^M_{ij, \overline{2015}}\)</span> and <span class="math inline">\(\text{UVI}^X_{ij, \overline{2015}}\)</span> are these values’ three-year averages centered in <span class="math inline">\(2015\)</span>, which, in this case, serves as the base year.</p>
+<p>The Terms of Trade index indicates how much the relative price between exports and imports has changed with respect to the base year.</p>
+</div>
+<div id="import-market-concentration-index" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Import Market Concentration index<a href="indicators.html#import-market-concentration-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Import Market Concentration index (IMC) is defined as</p>
+<span class="math display" id="eq:imc">\[\begin{equation}
+\text{IMC}_i = \frac{\sqrt{\sum_{j = 1}^{N^M_i} \left( \frac{M^v_{ij}}{M^v_{iW}}\right)^2} - \sqrt{\frac{1}{N^M_i}}}{1 - \sqrt{\frac{1}{N^M_i}}},
+\tag{2.8}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(M^v_{ij}\)</span> is the import value of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>, <span class="math inline">\(M^v_{iW}\)</span> is the import value of commodity <span class="math inline">\(i\)</span> for the area <em>World</em>, and <span class="math inline">\(N^M_i\)</span> is the total number of importing countries for commodity <span class="math inline">\(i\)</span>. The calculation of <span class="math inline">\(N^M_i\)</span> relies on import quantities, and it involves applying country-specific thresholds to determine whether a particular country is classified as an importer of commodity <span class="math inline">\(i\)</span>. When <span class="math inline">\(N^M_i = 1\)</span>, the value of <span class="math inline">\(\text{IMC}_i\)</span> is conventionally set to <span class="math inline">\(1\)</span>.</p>
+<p>The Import Market Concentration index measures, for each product, the level of import market concentration by country of destination. It allows assessing whether a large portion of commodity imports is acquired by a small number of countries or, conversely, if imports are evenly distributed among many countries.</p>
+</div>
+<div id="export-market-concentration-index" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Export Market Concentration index<a href="indicators.html#export-market-concentration-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Export Market Concentration index (EMC) is defined as</p>
+<span class="math display" id="eq:emc">\[\begin{equation}
+\text{EMC}_i = \frac{\sqrt{\sum_{j = 1}^{N^X_i} \left( \frac{X^v_{ij}}{X^v_{iW}}\right)^2} - \sqrt{\frac{1}{N^X_i}}}{1 - \sqrt{\frac{1}{N^X_i}}},
+\tag{2.9}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(X^v_{ij}\)</span> is the export values of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span>, <span class="math inline">\(X^v_{iW}\)</span> is the export value of commodity <span class="math inline">\(i\)</span> for the area <em>World</em>, and <span class="math inline">\(N^X_i\)</span> is the total number of exporting countries for commodity <span class="math inline">\(i\)</span>. The calculation of <span class="math inline">\(N^X_i\)</span> relies on export quantities, and it involves applying country-specific thresholds to determine whether a particular country is classified as an exporter of commodity <span class="math inline">\(i\)</span>. When <span class="math inline">\(N^X_i = 1\)</span>, the value of <span class="math inline">\(\text{EMC}_i\)</span> is conventionally set to <span class="math inline">\(1\)</span>.</p>
+<p>The Export Market Concentration index measures, for each product, the level of export market concentration by country of origin. It allows assessing whether a large portion of commodity exports is accounted for by a small number of countries or, conversely, if exports are evenly distributed among many countries.</p>
+</div>
+<div id="revealed-comparative-advantage-index" class="section level2 hasAnchor" number="2.9">
+<h2><span class="header-section-number">2.9</span> Revealed Comparative Advantage index<a href="indicators.html#revealed-comparative-advantage-index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Revealed Comparative Advantage index (RCA) is defined as</p>
+<span class="math display" id="eq:rca">\[\begin{equation}
+\text{RCA}_{ij} = \frac{X^v_{ij}}{^{\text{agr}}X^v_j} \cdot \frac{^{\text{agr}}X^v_W}{X^v_{iW}},
+\tag{2.10}
+\end{equation} \]</span>
+<p>where <span class="math inline">\(X^v_{ij}\)</span> and <span class="math inline">\(X^v_{iW}\)</span> are the export value of commodity <span class="math inline">\(i\)</span> for area <span class="math inline">\(j\)</span> and for the area <em>World</em>, respectively, while <span class="math inline">\(^{\text{agr}}X^v_{j}\)</span> and <span class="math inline">\(^{\text{agr}}X^v_{W}\)</span> are the corresponding aggregates of agricultural products.</p>
+<p>The Revealed Comparative Advantage index is a proxy for the country’s export potential. The RCA indicates whether a country is expanding the range of products in which it possesses trade potential, as opposed to situations where the number of products that can be competitively exported remains static.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="inputdata.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/SWS-Methodology/Trade_indicators/edit/master/01Indicators.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/SWS-Methodology/Trade_indicators/blob/master/01Indicators.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

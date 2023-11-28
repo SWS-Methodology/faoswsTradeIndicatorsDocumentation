@@ -4,26 +4,25 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Trade Indices Numbers</title>
-  <meta name="description" content="Trade Indices Numbers" />
-  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+  <title>Trade indicators</title>
+  <meta name="description" content="This is the documentation for the Trade indicators." />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Trade Indices Numbers" />
+  <meta property="og:title" content="Trade indicators" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/./images/FAO_logo.svg.png" />
-  
-  <meta name="github-repo" content="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation" />
+  <meta property="og:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+  <meta property="og:description" content="This is the documentation for the Trade indicators." />
+  <meta name="github-repo" content="https://github.com/SWS-Methodology/Trade_indicators" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Trade Indices Numbers" />
+  <meta name="twitter:title" content="Trade indicators" />
   
-  
-  <meta name="twitter:image" content="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/./images/FAO_logo.svg.png" />
+  <meta name="twitter:description" content="This is the documentation for the Trade indicators." />
+  <meta name="twitter:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
 
-<meta name="author" content="ivan.sortino@fao.org" />
+<meta name="author" content="Author: Riccardo Giubilei" />
 
 
-<meta name="date" content="2023-05-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +30,7 @@
   
   <link rel="shortcut icon" href="./images/FAO_logo.svg.ico" type="image/x-icon" />
 
-<link rel="next" href="methodology.html"/>
+<link rel="next" href="indicators.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -55,6 +54,10 @@
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -69,63 +72,51 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation">Trade Indices Numbers</a></li>
+<li><a href="https://github.com/SWS-Methodology/Trade_Indicators">Trade Indicators</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#module-workflow"><i class="fa fa-check"></i><b>1.1</b> Module Workflow</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#build-up-data-for-validation"><i class="fa fa-check"></i><b>1.2</b> Build up data for validation</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#sws-implementation-procedure"><i class="fa fa-check"></i><b>1.3</b> SWS implementation procedure</a></li>
-<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#input-of-the-plugin"><i class="fa fa-check"></i><b>1.4</b> Input of the Plugin</a></li>
-<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#output-of-the-plugin"><i class="fa fa-check"></i><b>1.5</b> Output of the plugin</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#list-of-indicators"><i class="fa fa-check"></i><b>1.1</b> List of indicators</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>1.2</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>2</b> Trade Indices Numbers - Methodology</a>
+<li class="chapter" data-level="2" data-path="indicators.html"><a href="indicators.html"><i class="fa fa-check"></i><b>2</b> Indicators</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="methodology.html"><a href="methodology.html#base-period-quantities"><i class="fa fa-check"></i><b>2.1</b> Base period quantities</a>
-<ul>
-<li class="chapter" data-level="2.1.1" data-path="methodology.html"><a href="methodology.html#base-import-quantity"><i class="fa fa-check"></i><b>2.1.1</b> Base Import Quantity</a></li>
-<li class="chapter" data-level="2.1.2" data-path="methodology.html"><a href="methodology.html#base-export-quantity"><i class="fa fa-check"></i><b>2.1.2</b> Base Export Quantity</a></li>
-<li class="chapter" data-level="2.1.3" data-path="methodology.html"><a href="methodology.html#import-value-base-period-quantity"><i class="fa fa-check"></i><b>2.1.3</b> Import Value Base Period Quantity</a></li>
-<li class="chapter" data-level="2.1.4" data-path="methodology.html"><a href="methodology.html#export-value-base-period-quantity"><i class="fa fa-check"></i><b>2.1.4</b> Export Value Base Period Quantity</a></li>
-<li class="chapter" data-level="2.1.5" data-path="methodology.html"><a href="methodology.html#import-value-base-period-price"><i class="fa fa-check"></i><b>2.1.5</b> Import Value Base Period Price</a></li>
-<li class="chapter" data-level="2.1.6" data-path="methodology.html"><a href="methodology.html#export-value-base-period-price"><i class="fa fa-check"></i><b>2.1.6</b> Export Value Base Period Price</a></li>
+<li class="chapter" data-level="2.1" data-path="indicators.html"><a href="indicators.html#import-dependency-ratio"><i class="fa fa-check"></i><b>2.1</b> Import Dependency Ratio</a></li>
+<li class="chapter" data-level="2.2" data-path="indicators.html"><a href="indicators.html#self-sufficiency-ratio"><i class="fa fa-check"></i><b>2.2</b> Self-Sufficiency Ratio</a></li>
+<li class="chapter" data-level="2.3" data-path="indicators.html"><a href="indicators.html#share-of-agricultural-exports-to-gdp"><i class="fa fa-check"></i><b>2.3</b> Share of Agricultural Exports to GDP</a></li>
+<li class="chapter" data-level="2.4" data-path="indicators.html"><a href="indicators.html#bilateral-trade-discrepancy-index"><i class="fa fa-check"></i><b>2.4</b> Bilateral Trade Discrepancy index</a></li>
+<li class="chapter" data-level="2.5" data-path="indicators.html"><a href="indicators.html#agricultural-trade-openness-index"><i class="fa fa-check"></i><b>2.5</b> Agricultural Trade Openness index</a></li>
+<li class="chapter" data-level="2.6" data-path="indicators.html"><a href="indicators.html#terms-of-trade-index"><i class="fa fa-check"></i><b>2.6</b> Terms of Trade index</a></li>
+<li class="chapter" data-level="2.7" data-path="indicators.html"><a href="indicators.html#import-market-concentration-index"><i class="fa fa-check"></i><b>2.7</b> Import Market Concentration index</a></li>
+<li class="chapter" data-level="2.8" data-path="indicators.html"><a href="indicators.html#export-market-concentration-index"><i class="fa fa-check"></i><b>2.8</b> Export Market Concentration index</a></li>
+<li class="chapter" data-level="2.9" data-path="indicators.html"><a href="indicators.html#revealed-comparative-advantage-index"><i class="fa fa-check"></i><b>2.9</b> Revealed Comparative Advantage index</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="methodology.html"><a href="methodology.html#trade-indices"><i class="fa fa-check"></i><b>2.2</b> Trade indices</a>
+<li class="chapter" data-level="3" data-path="inputdata.html"><a href="inputdata.html"><i class="fa fa-check"></i><b>3</b> Input data</a>
 <ul>
-<li class="chapter" data-level="2.2.1" data-path="methodology.html"><a href="methodology.html#import-value-index"><i class="fa fa-check"></i><b>2.2.1</b> Import Value Index</a></li>
-<li class="chapter" data-level="2.2.2" data-path="methodology.html"><a href="methodology.html#export-value-index"><i class="fa fa-check"></i><b>2.2.2</b> Export Value Index</a></li>
-<li class="chapter" data-level="2.2.3" data-path="methodology.html"><a href="methodology.html#import-unitvalue-index"><i class="fa fa-check"></i><b>2.2.3</b> Import Unit/Value Index</a></li>
-<li class="chapter" data-level="2.2.4" data-path="methodology.html"><a href="methodology.html#export-unitvalue-index"><i class="fa fa-check"></i><b>2.2.4</b> Export Unit/Value Index</a></li>
-<li class="chapter" data-level="2.2.5" data-path="methodology.html"><a href="methodology.html#import-quantity-index"><i class="fa fa-check"></i><b>2.2.5</b> Import Quantity Index</a></li>
-<li class="chapter" data-level="2.2.6" data-path="methodology.html"><a href="methodology.html#export-quantity-index"><i class="fa fa-check"></i><b>2.2.6</b> Export Quantity Index</a></li>
-</ul></li>
-<li class="chapter" data-level="2.3" data-path="methodology.html"><a href="methodology.html#fob-and-cif"><i class="fa fa-check"></i><b>2.3</b> FOB and CIF</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html"><i class="fa fa-check"></i><b>3</b> Trad Indices Numbers - Plugin</a>
+<li class="chapter" data-level="3.1" data-path="inputdata.html"><a href="inputdata.html#dimensions-and-codelists"><i class="fa fa-check"></i><b>3.1</b> Dimensions and codelists</a></li>
+<li class="chapter" data-level="3.2" data-path="inputdata.html"><a href="inputdata.html#domains-and-datasets"><i class="fa fa-check"></i><b>3.2</b> Domains and datasets</a></li>
+<li class="chapter" data-level="3.3" data-path="inputdata.html"><a href="inputdata.html#datatables"><i class="fa fa-check"></i><b>3.3</b> Datatables</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html#supportdt"><i class="fa fa-check"></i><b>3.1</b> Support Datatables</a></li>
-<li class="chapter" data-level="3.2" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html#plugin-workflow"><i class="fa fa-check"></i><b>3.2</b> Plugin Workflow</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html#ti---aggregation-module"><i class="fa fa-check"></i><b>3.2.1</b> TI - Aggregation Module</a></li>
+<li class="chapter" data-level="3.3.1" data-path="inputdata.html"><a href="inputdata.html#reporters"><i class="fa fa-check"></i><b>3.3.1</b> Reporter countries</a></li>
+<li class="chapter" data-level="3.3.2" data-path="inputdata.html"><a href="inputdata.html#keycommodities"><i class="fa fa-check"></i><b>3.3.2</b> Key commodities</a></li>
+<li class="chapter" data-level="3.3.3" data-path="inputdata.html"><a href="inputdata.html#thresholds"><i class="fa fa-check"></i><b>3.3.3</b> Thresholds</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html#parameters"><i class="fa fa-check"></i><b>3.3</b> Parameters</a></li>
-<li class="chapter" data-level="3.4" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html#additional-notes"><i class="fa fa-check"></i><b>3.4</b> Additional Notes</a></li>
-<li class="chapter" data-level="3.5" data-path="trad-indices-numbers---plugin.html"><a href="trad-indices-numbers---plugin.html#execution"><i class="fa fa-check"></i><b>3.5</b> Execution</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>4</b> SWS Resources</a>
+<li class="chapter" data-level="4" data-path="elements.html"><a href="elements.html"><i class="fa fa-check"></i><b>4</b> Input and output elements</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="resources.html"><a href="resources.html#code-lists"><i class="fa fa-check"></i><b>4.1</b> Code Lists</a></li>
-<li class="chapter" data-level="4.2" data-path="resources.html"><a href="resources.html#datatables"><i class="fa fa-check"></i><b>4.2</b> Data Tables</a>
-<ul>
-<li class="chapter" data-level="4.2.1" data-path="resources.html"><a href="resources.html#ti---base-year"><i class="fa fa-check"></i><b>4.2.1</b> TI - Base Year</a></li>
-<li class="chapter" data-level="4.2.2" data-path="resources.html"><a href="resources.html#countrytab"><i class="fa fa-check"></i><b>4.2.2</b> TI - Country List</a></li>
-<li class="chapter" data-level="4.2.3" data-path="resources.html"><a href="resources.html#itemtab"><i class="fa fa-check"></i><b>4.2.3</b> TI - Item List</a></li>
-<li class="chapter" data-level="4.2.4" data-path="resources.html"><a href="resources.html#aggregationtab"><i class="fa fa-check"></i><b>4.2.4</b> TI - Aggregation Table</a></li>
-<li class="chapter" data-level="4.2.5" data-path="resources.html"><a href="resources.html#FOBCIFtab"><i class="fa fa-check"></i><b>4.2.5</b> TI - area not FOB/CIF multipliers</a></li>
-<li class="chapter" data-level="4.2.6" data-path="resources.html"><a href="resources.html#ti---code-conversion-table"><i class="fa fa-check"></i><b>4.2.6</b> TI - Code conversion table</a></li>
-<li class="chapter" data-level="4.2.7" data-path="resources.html"><a href="resources.html#ti---log"><i class="fa fa-check"></i><b>4.2.7</b> TI - LOG</a></li>
+<li class="chapter" data-level="4.1" data-path="elements.html"><a href="elements.html#inputelements"><i class="fa fa-check"></i><b>4.1</b> Input elements</a></li>
+<li class="chapter" data-level="4.2" data-path="elements.html"><a href="elements.html#from-input-to-output-elements"><i class="fa fa-check"></i><b>4.2</b> From input to output elements</a></li>
+<li class="chapter" data-level="4.3" data-path="elements.html"><a href="elements.html#output-elements"><i class="fa fa-check"></i><b>4.3</b> Output elements</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="plugins.html"><a href="plugins.html"><i class="fa fa-check"></i><b>5</b> Plugins</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="plugins.html"><a href="plugins.html#idr---ssr-plugin"><i class="fa fa-check"></i><b>5.1</b> IDR - SSR plugin</a></li>
+<li class="chapter" data-level="5.2" data-path="plugins.html"><a href="plugins.html#sae-ato-plugin"><i class="fa fa-check"></i><b>5.2</b> SAE-ATO plugin</a></li>
+<li class="chapter" data-level="5.3" data-path="plugins.html"><a href="plugins.html#btd-plugin"><i class="fa fa-check"></i><b>5.3</b> BTD plugin</a></li>
+<li class="chapter" data-level="5.4" data-path="plugins.html"><a href="plugins.html#tot"><i class="fa fa-check"></i><b>5.4</b> TOT plugin</a></li>
+<li class="chapter" data-level="5.5" data-path="plugins.html"><a href="plugins.html#imc-emc-plugin"><i class="fa fa-check"></i><b>5.5</b> IMC-EMC plugin</a></li>
+<li class="chapter" data-level="5.6" data-path="plugins.html"><a href="plugins.html#rca-plugin"><i class="fa fa-check"></i><b>5.6</b> RCA plugin</a></li>
 </ul></li>
 </ul>
 
@@ -136,7 +127,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Trade Indices Numbers</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Trade indicators</a>
           </h1>
         </div>
 
@@ -145,152 +136,29 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Trade Indices Numbers</h1>
-<p class="author"><em><a href="mailto:ivan.sortino@fao.org" class="email">ivan.sortino@fao.org</a></em></p>
-<p class="date"><em>2023-05-29</em></p>
+<h1 class="title">Trade indicators</h1>
+<p class="author"><em>Author: Riccardo Giubilei</em></p>
 </div>
-<div id="about" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> About<a href="index.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The aim of this module is to calculate the Trades Indices Numbers within the Statistical Working System (SWS). The procedure will be validated by matching the results disseminated by FAO on FAOSTAT platform.
-In order to perform the validation correctly, disseminated input data needs to be available within SWS in the corresponding dataset of <em>Disseminated Dataset</em> Domain.</p>
-<div id="module-workflow" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Module Workflow<a href="index.html#module-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As shown in the figure below, the general workflow of the module require that the Technical Unit store data in “Disseminated Dataset” to allow the plugin to ingest the right data.</p>
-<div class="figure">
-<img src="images/Dataflow_1/Slide1.PNG" alt="" />
-<p class="caption">Trade Indices Numbers Plugin Data Flow</p>
-</div>
-</div>
-<div id="build-up-data-for-validation" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Build up data for validation<a href="index.html#build-up-data-for-validation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>To apply the methodology, support data are imported into different datatable in SWS. For instance Item list, Countries list and group compositions are fetched as follow:</p>
-<ul>
-<li><p>Country list is obtained from <em>Definitions and standards</em> section of FAOSTAT <a href="https://www.fao.org/faostat/en/#data/TCL">“Crops and livestock products”</a> dataset and uploaded into SWS <a href="resources.html#countrytab"><code>TI - Country list</code></a> datatable;</p></li>
-<li><p>Item list is obtained from <em>Definitions and standards</em> section of FAOSTAT <a href="https://www.fao.org/faostat/en/#data/TCL">“Crops and livestock products”</a> dataset and uploaded into SWS <a href="resources.html#itemtab"><code>TI - Item List</code></a> datatable;</p></li>
-<li><p>Items and Countries groups list is obtained from <em>Definitions and standards</em> section of FAOSTAT <a href="https://www.fao.org/faostat/en/#data/TCL">“Value of Production”</a> dataset and uploaded into SWS <a href="resources.html#aggregationtab"><code>TI - Aggregation Table</code></a> datatable;</p></li>
-<li><p>Multipliers for area not FOB <em>(Free On Board)</em> / CIF <em>(Cost, Insurance, Freight)</em> are obtained from old methodology and uploaded on SWS <a href="resources.html#FOBCIFtab"><code>TI - arean not FOB/CIF multipliers</code></a> datatable;</p></li>
-</ul>
-<p>A detailed description of each supporting datatable is reported in <a href="resources.html#datatables">SWS resources</a> section of this documentation.</p>
-<p>Since historical disseminated data may differ from those present on the Statistical Working System, it is necessary to make it available on SWS. To do this the CSI-SWS technical team need to retrieve the data from the the dissemination platform (FAOSTAT) and update it on <code>Disseminated Domain</code>.
-Note that after some changes have been applied to the methodology, results may differs for single items respect to the FAOSTAT disseminated one. Indeed, for consistency with CPC coding standard and to align the <em>Trade Indices</em> (TI) domain with <em>Crops and livestock products</em> (TCL) one, the plugin will calculate each single items individually and returns values for each one instead of grouping them.</p>
-</div>
-<div id="sws-implementation-procedure" class="section level2 hasAnchor" number="1.3">
-<h2><span class="header-section-number">1.3</span> SWS implementation procedure<a href="index.html#sws-implementation-procedure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The plugin will work within a session, meaning that the user needs to select the elements and the years for which they intend to calculate the trade indices, then run the plugin within the new created session.
-It is worth noting that for the sake of consistency with FAOSTAT item/country list and for calculation of the aggregates, the plugin will always calculate values for all the countries and items specified into the supporting data table <code>"TI - Country list"</code> and <code>"TI - Item list"</code>, the output can be filtered using the different parameters implemented.</p>
-<p>The module will pull its data directly within the working system, allowing the user to choose the source of data for Import or Export quantities. For instance, if Disseminated Datasets source is not selected:</p>
-<ul>
-<li><p>Import / Export quantities in tonnes (<em>element 5610/5910</em>) are pulled from <code>Trade</code> domain, dataset <code>Total Trade (CPC)</code>;</p></li>
-<li><p>Import / Export values in thousand US Dollar (<em>element 5622/5922</em>) are pulled from <code>Trade</code> domain, dataset <code>Total Trade (CPC)</code>;</p></li>
-</ul>
-<p><br></p>
-<p>For the correct functioning of the module it is important to ensure that the read permissions on the datasets mentioned above are correctly guaranteed.<br />
-Please note that the plugin retrieves data from the item codes specified in the <code>"TI - Item list"</code> datatable, following the official CPC standard. However, as some SWS item codes may not align with the standard, the plugin enables internal code conversion to ensure accurate information retrieval. The correct codes are determined by referencing the mapping specified in the <code>TI - Code conversion table</code> datatable.<br />
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The following document describes the implementation of 9 trade indicators within the Statistical Working System (SWS) of the Food and Agricultural Organization of the United Nations (FAO).</p>
+<div id="list-of-indicators" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> List of indicators<a href="index.html#list-of-indicators" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The list of trade indicators integrated into this process is the following:<br />
+1. Import Dependency Ratio.<br />
+2. Self-Sufficiency Ratio.<br />
+3. Share of Agricultural Exports to GDP.<br />
+4. Bilateral Trade Discrepancy index.<br />
+5. Agricultural Trade Openness index.<br />
+6. Terms of Trade index.<br />
+7. Import Market Concentration index.<br />
+8. Export Market Concentration index.<br />
+9. Revealed Comparative Advantage index.<br />
 </p>
 </div>
-<div id="input-of-the-plugin" class="section level2 hasAnchor" number="1.4">
-<h2><span class="header-section-number">1.4</span> Input of the Plugin<a href="index.html#input-of-the-plugin" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The module will need the following input data to compute the Trade Indices numbers :</p>
-<p><br></p>
-<table>
-<caption><span id="tab:unnamed-chunk-1">Table 1.1: </span>Trade Indices Numbers Plugin input elements.</caption>
-<thead>
-<tr class="header">
-<th align="left">Element Code</th>
-<th align="left">Element descriptor</th>
-<th align="left">Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">5610</td>
-<td align="left">Import Quantity</td>
-<td align="left">tonnes</td>
-</tr>
-<tr class="even">
-<td align="left">5622</td>
-<td align="left">Import Value</td>
-<td align="left">1000 $</td>
-</tr>
-<tr class="odd">
-<td align="left">5910</td>
-<td align="left">Export Quantity</td>
-<td align="left">tonnes</td>
-</tr>
-<tr class="even">
-<td align="left">5922</td>
-<td align="left">Export Value</td>
-<td align="left">1000 $</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="output-of-the-plugin" class="section level2 hasAnchor" number="1.5">
-<h2><span class="header-section-number">1.5</span> Output of the plugin<a href="index.html#output-of-the-plugin" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The module will return the time series for all the elements selected in the session. The possible output elements are listed in the table below:</p>
-<p><br></p>
-<table>
-<caption><span id="tab:unnamed-chunk-2">Table 1.2: </span>Trade Indices Numbers Plugin calculated elements.</caption>
-<thead>
-<tr class="header">
-<th align="left">Element Code</th>
-<th align="left">Element descriptor</th>
-<th align="left">Unit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">64</td>
-<td align="left">Import Value Base Period Quantity</td>
-<td align="left">1000 $</td>
-</tr>
-<tr class="even">
-<td align="left">65</td>
-<td align="left">Import Value Base Period Price</td>
-<td align="left">1000 $</td>
-</tr>
-<tr class="odd">
-<td align="left">94</td>
-<td align="left">Export Value Base Period Quantity</td>
-<td align="left">1000 $</td>
-</tr>
-<tr class="even">
-<td align="left">95</td>
-<td align="left">Export Value Base Period Price</td>
-<td align="left">1000 $</td>
-</tr>
-<tr class="odd">
-<td align="left">462</td>
-<td align="left">Import Value Index (2014-2016 = 100)</td>
-<td align="left">index</td>
-</tr>
-<tr class="even">
-<td align="left">464</td>
-<td align="left">Import Unit/Value Index (2014-2016 = 100)</td>
-<td align="left">index</td>
-</tr>
-<tr class="odd">
-<td align="left">465</td>
-<td align="left">Import Quantity Index (2014-2016 = 100)</td>
-<td align="left">index</td>
-</tr>
-<tr class="even">
-<td align="left">492</td>
-<td align="left">Export Value Index (2014-2016 = 100)</td>
-<td align="left">index</td>
-</tr>
-<tr class="odd">
-<td align="left">494</td>
-<td align="left">Export Unit/Value Index (2014-2016 = 100)</td>
-<td align="left">index</td>
-</tr>
-<tr class="even">
-<td align="left">495</td>
-<td align="left">Export Quantity Index (2014-2016 = 100)</td>
-<td align="left">index</td>
-</tr>
-</tbody>
-</table>
+<div id="summary" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Summary<a href="index.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The structure of this document is the following. Section <a href="indicators.html#indicators">2</a> describes the indicators from a methodological perspective. Section <a href="inputdata.html#inputdata">3</a> provides an exhaustive description of input data and other type of input information needed for the plugins. Section <a href="elements.html#elements">4</a> illustrates the input and output elements used for this process. Finally, Section <a href="plugins.html#plugins">5</a> describes the <span class="math inline">\(6\)</span> plugins that implement the indicators.</p>
 
 </div>
 </div>
@@ -300,7 +168,7 @@ Please note that the plugin retrieves data from the item codes specified in the 
         </div>
       </div>
 
-<a href="methodology.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="indicators.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -331,7 +199,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/edit/master/index.Rmd",
+"link": "https://github.com/SWS-Methodology/Trade_indicators/edit/master/index.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -339,7 +207,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/SWS-Methodology/faoswsTradeIndicesNumbersDocumentation/blob/master/index.Rmd",
+"link": "https://github.com/SWS-Methodology/Trade_indicators/blob/master/index.Rmd",
 "text": null
 },
 "download": null,

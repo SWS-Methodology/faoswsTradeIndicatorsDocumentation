@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Input and output elements | Trade indicators</title>
+  <meta name="description" content="This is the documentation for the Trade indicators." />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Input and output elements | Trade indicators" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+  <meta property="og:description" content="This is the documentation for the Trade indicators." />
+  <meta name="github-repo" content="https://github.com/SWS-Methodology/Trade_indicators" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Input and output elements | Trade indicators" />
+  
+  <meta name="twitter:description" content="This is the documentation for the Trade indicators." />
+  <meta name="twitter:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+
+<meta name="author" content="Author: Riccardo Giubilei" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="./images/FAO_logo.svg.ico" type="image/x-icon" />
+<link rel="prev" href="inputdata.html"/>
+<link rel="next" href="plugins.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://github.com/SWS-Methodology/Trade_Indicators">Trade Indicators</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#list-of-indicators"><i class="fa fa-check"></i><b>1.1</b> List of indicators</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>1.2</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="indicators.html"><a href="indicators.html"><i class="fa fa-check"></i><b>2</b> Indicators</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="indicators.html"><a href="indicators.html#import-dependency-ratio"><i class="fa fa-check"></i><b>2.1</b> Import Dependency Ratio</a></li>
+<li class="chapter" data-level="2.2" data-path="indicators.html"><a href="indicators.html#self-sufficiency-ratio"><i class="fa fa-check"></i><b>2.2</b> Self-Sufficiency Ratio</a></li>
+<li class="chapter" data-level="2.3" data-path="indicators.html"><a href="indicators.html#share-of-agricultural-exports-to-gdp"><i class="fa fa-check"></i><b>2.3</b> Share of Agricultural Exports to GDP</a></li>
+<li class="chapter" data-level="2.4" data-path="indicators.html"><a href="indicators.html#bilateral-trade-discrepancy-index"><i class="fa fa-check"></i><b>2.4</b> Bilateral Trade Discrepancy index</a></li>
+<li class="chapter" data-level="2.5" data-path="indicators.html"><a href="indicators.html#agricultural-trade-openness-index"><i class="fa fa-check"></i><b>2.5</b> Agricultural Trade Openness index</a></li>
+<li class="chapter" data-level="2.6" data-path="indicators.html"><a href="indicators.html#terms-of-trade-index"><i class="fa fa-check"></i><b>2.6</b> Terms of Trade index</a></li>
+<li class="chapter" data-level="2.7" data-path="indicators.html"><a href="indicators.html#import-market-concentration-index"><i class="fa fa-check"></i><b>2.7</b> Import Market Concentration index</a></li>
+<li class="chapter" data-level="2.8" data-path="indicators.html"><a href="indicators.html#export-market-concentration-index"><i class="fa fa-check"></i><b>2.8</b> Export Market Concentration index</a></li>
+<li class="chapter" data-level="2.9" data-path="indicators.html"><a href="indicators.html#revealed-comparative-advantage-index"><i class="fa fa-check"></i><b>2.9</b> Revealed Comparative Advantage index</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="inputdata.html"><a href="inputdata.html"><i class="fa fa-check"></i><b>3</b> Input data</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="inputdata.html"><a href="inputdata.html#dimensions-and-codelists"><i class="fa fa-check"></i><b>3.1</b> Dimensions and codelists</a></li>
+<li class="chapter" data-level="3.2" data-path="inputdata.html"><a href="inputdata.html#domains-and-datasets"><i class="fa fa-check"></i><b>3.2</b> Domains and datasets</a></li>
+<li class="chapter" data-level="3.3" data-path="inputdata.html"><a href="inputdata.html#datatables"><i class="fa fa-check"></i><b>3.3</b> Datatables</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="inputdata.html"><a href="inputdata.html#reporters"><i class="fa fa-check"></i><b>3.3.1</b> Reporter countries</a></li>
+<li class="chapter" data-level="3.3.2" data-path="inputdata.html"><a href="inputdata.html#keycommodities"><i class="fa fa-check"></i><b>3.3.2</b> Key commodities</a></li>
+<li class="chapter" data-level="3.3.3" data-path="inputdata.html"><a href="inputdata.html#thresholds"><i class="fa fa-check"></i><b>3.3.3</b> Thresholds</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="elements.html"><a href="elements.html"><i class="fa fa-check"></i><b>4</b> Input and output elements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="elements.html"><a href="elements.html#inputelements"><i class="fa fa-check"></i><b>4.1</b> Input elements</a></li>
+<li class="chapter" data-level="4.2" data-path="elements.html"><a href="elements.html#from-input-to-output-elements"><i class="fa fa-check"></i><b>4.2</b> From input to output elements</a></li>
+<li class="chapter" data-level="4.3" data-path="elements.html"><a href="elements.html#output-elements"><i class="fa fa-check"></i><b>4.3</b> Output elements</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plugins.html"><a href="plugins.html"><i class="fa fa-check"></i><b>5</b> Plugins</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="plugins.html"><a href="plugins.html#idr---ssr-plugin"><i class="fa fa-check"></i><b>5.1</b> IDR - SSR plugin</a></li>
+<li class="chapter" data-level="5.2" data-path="plugins.html"><a href="plugins.html#sae-ato-plugin"><i class="fa fa-check"></i><b>5.2</b> SAE-ATO plugin</a></li>
+<li class="chapter" data-level="5.3" data-path="plugins.html"><a href="plugins.html#btd-plugin"><i class="fa fa-check"></i><b>5.3</b> BTD plugin</a></li>
+<li class="chapter" data-level="5.4" data-path="plugins.html"><a href="plugins.html#tot"><i class="fa fa-check"></i><b>5.4</b> TOT plugin</a></li>
+<li class="chapter" data-level="5.5" data-path="plugins.html"><a href="plugins.html#imc-emc-plugin"><i class="fa fa-check"></i><b>5.5</b> IMC-EMC plugin</a></li>
+<li class="chapter" data-level="5.6" data-path="plugins.html"><a href="plugins.html#rca-plugin"><i class="fa fa-check"></i><b>5.6</b> RCA plugin</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Trade indicators</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="elements" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Input and output elements<a href="elements.html#elements" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The plugins for this process use many different input elements. For this reason, they are separately described here, together with the output elements they help computing.</p>
+<div id="inputelements" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Input elements<a href="elements.html#inputelements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The input elements considered for this process are listed in Table <a href="elements.html#tab:input">4.1</a>, which also specifies the fundamental quantities they are used for. When working with specialized domains, the following datasets can be used to obtain the elements:<br />
+- <code>aproduction</code>: <span class="math inline">\(5510\)</span>.<br />
+- <code>total_trade_cpc_m49</code>: <span class="math inline">\(5610\)</span>, <span class="math inline">\(5910\)</span>, <span class="math inline">\(5622\)</span>, <span class="math inline">\(5922\)</span>, <span class="math inline">\(5630\)</span>, <span class="math inline">\(5930\)</span>.<br />
+- <code>completed_tf_cpc_m49</code>: <span class="math inline">\(5610\)</span>, <span class="math inline">\(5910\)</span>.<br />
+- <code>ess_eco_macroind_complete</code>: <span class="math inline">\(8003\)</span>.</p>
+<p>Elements <span class="math inline">\(5610\)</span> and <span class="math inline">\(5910\)</span> are retrieved either from dataset <code>total_trade_cpc_m49</code> or from dataset <code>completed_tf_cpc_m49</code>, depending whether the focus is on unilateral or bilateral trade exchanges, respectively.</p>
+<table>
+<caption><span id="tab:input">Table 4.1: </span> Input elements, and fundamental quantities they are used to compute.</caption>
+<thead>
+<tr class="header">
+<th align="center"><strong>Code</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="center"><strong>Unit</strong></th>
+<th align="center"><strong>Used to compute</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">5510</td>
+<td align="center">Production</td>
+<td align="center"><span class="math inline">\(t\)</span></td>
+<td align="center"><span class="math inline">\(Y^q_{ij}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">5610</td>
+<td align="center">Import Quantity</td>
+<td align="center"><span class="math inline">\(t\)</span></td>
+<td align="center"><span class="math inline">\(M^q_{ij}\)</span>, <span class="math inline">\(M^v_{i[AB]}\)</span>, <span class="math inline">\(N^M_i\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">5910</td>
+<td align="center">Export Quantity</td>
+<td align="center"><span class="math inline">\(t\)</span></td>
+<td align="center"><span class="math inline">\(X^q_{ij}\)</span>, <span class="math inline">\(X^v_{i[AB]}\)</span>, <span class="math inline">\(N^X_i\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">5622</td>
+<td align="center">Import Value</td>
+<td align="center"><span class="math inline">\(1000\$\)</span></td>
+<td align="center"><span class="math inline">\(M^v_{ij}\)</span>, <span class="math inline">\(^{\text{agr}}M^v_{j}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">5922</td>
+<td align="center">Export Value</td>
+<td align="center"><span class="math inline">\(1000\$\)</span></td>
+<td align="center"><span class="math inline">\(X^v_{ij}\)</span>, <span class="math inline">\(^{\text{agr}}X^v_{j}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">5630</td>
+<td align="center">Import Unit Value</td>
+<td align="center"><span class="math inline">\(\$/t\)</span></td>
+<td align="center"><span class="math inline">\(\text{UVI}^M_{ij, t}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">5930</td>
+<td align="center">Export Unit Value</td>
+<td align="center"><span class="math inline">\(\$/t\)</span></td>
+<td align="center"><span class="math inline">\(\text{UVI}^X_{ij, t}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">8003</td>
+<td align="center">GDP</td>
+<td align="center"><span class="math inline">\(1000000\$\)</span></td>
+<td align="center"><span class="math inline">\(\text{GDP}_j\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="from-input-to-output-elements" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> From input to output elements<a href="elements.html#from-input-to-output-elements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once the input elements listed Table <a href="elements.html#tab:input">4.1</a> are retrieved, they can be used to compute the fundamental quantities presented in Table 2.1. These quantities, in turn, serve as the basis for calculating the indicators. Figure <a href="#fig:inputoutput">4.1</a> provides a concise overview of this two-step process, clearly indicating which input elements are used in the computation of each indicator.</p>
+<div class="float">
+<img src="images/input_output_methodprop.png" alt=" Figure 4.1. Overview of input elements (columns) and which indicators (rows) they are used to compute." />
+<div class="figcaption"> Figure 4.1. Overview of input elements (columns) and which indicators (rows) they are used to compute.</div>
+</div>
+</div>
+<div id="output-elements" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Output elements<a href="elements.html#output-elements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The process required the introduction of <span class="math inline">\(9\)</span> new elements and <span class="math inline">\(6\)</span> new subelements into <code>measuredElementTrade</code> codelist. They are listed in Table <a href="elements.html#tab:output">4.2</a>.</p>
+<p>Each of the <span class="math inline">\(9\)</span> elements correspond to a different indicator. The BTD indicator has two different forms – for when the reporter country acts either as an importing or as an exporting country – so two subelements are created: <span class="math inline">\(504.01\)</span> and <span class="math inline">\(504.02\)</span>, respectively. The other two subelements of element <span class="math inline">\(504\)</span>, which are <span class="math inline">\(504.\text{d}1\)</span> and <span class="math inline">\(504.\text{d}2,\)</span> are used to (possibly) include the corresponding differences between imports and exports; they are computed as the numerator of Equation (2.4) and Equation (2.5), respectively. Finally, since RCA is calculated for each commodity for both the agricultural aggregates F1881 and F1882, subelements <span class="math inline">\(509.01\)</span> (for aggregate F1881) and <span class="math inline">\(509.02\)</span> (for aggregate F1882) are also introduced.</p>
+<table>
+<caption><span id="tab:output">Table 4.2: </span> Output elements.</caption>
+<thead>
+<tr class="header">
+<th align="center"><strong>Code</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong>Unit</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(501\)</span></td>
+<td align="center">Import Dependency Ratio</td>
+<td align="right">Index</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(502\)</span></td>
+<td align="center">Self-Sufficiency Ratio</td>
+<td align="right">Index</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(503\)</span></td>
+<td align="center">Share of Agricultural Exports to GDP</td>
+<td align="right"><span class="math inline">\(\%\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(504\)</span></td>
+<td align="center">Bilateral Trade Discrepancy index</td>
+<td align="right">Index</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(504.01\)</span></td>
+<td align="center">BTD index - Importing reporter country</td>
+<td align="right">Index</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(504.\text{d}1\)</span></td>
+<td align="center">BT difference - Importing reporter country</td>
+<td align="right"><span class="math inline">\(1000\$\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(504.02\)</span></td>
+<td align="center">BTD index - Exporting reporter country</td>
+<td align="right">Index</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(504.\text{d}2\)</span></td>
+<td align="center">BT difference - Exporting reporter country</td>
+<td align="right"><span class="math inline">\(1000\$\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(505\)</span></td>
+<td align="center">Agricultural Trade Openness index</td>
+<td align="right">Index</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(506\)</span></td>
+<td align="center">Terms of Trade index</td>
+<td align="right"><span class="math inline">\(\%\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(507\)</span></td>
+<td align="center">Import Market Concentration index</td>
+<td align="right">Index</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(508\)</span></td>
+<td align="center">Export Market Concentration index</td>
+<td align="right">Index</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(509\)</span></td>
+<td align="center">Revealed Comparative Advantage index</td>
+<td align="right">Index</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(509.01\)</span></td>
+<td align="center">RCA index - F1881 aggregate</td>
+<td align="right">Index</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(509.02\)</span></td>
+<td align="center">RCA index - F1882 aggregate</td>
+<td align="right">Index</td>
+</tr>
+</tbody>
+</table>
+<p>The output elements are stored within the Trade domain in either one of two datasets: <code>trade_indicators</code> and <code>trade_indicators_bilateral</code>. Element <span class="math inline">\(504\)</span> and its subelements are accessible within <code>trade_indicators_bilateral</code>, while the others can be retrieved in <code>trade_indicators</code>. The only difference between the two datasets is that <code>trade_indicators</code>’s dimension <code>geographicAreaM49</code> is replaced in <code>trade_indicators_bilateral</code> with <code>geographicAreaM49Reporter</code> and <code>geographicAreaM49Partner</code>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="inputdata.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="plugins.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/SWS-Methodology/Trade_indicators/edit/master/03InputOutputElements.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/SWS-Methodology/Trade_indicators/blob/master/03InputOutputElements.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

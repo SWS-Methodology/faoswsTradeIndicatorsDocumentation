@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Input data | Trade indicators</title>
+  <meta name="description" content="This is the documentation for the Trade indicators." />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Input data | Trade indicators" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+  <meta property="og:description" content="This is the documentation for the Trade indicators." />
+  <meta name="github-repo" content="https://github.com/SWS-Methodology/Trade_indicators" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Input data | Trade indicators" />
+  
+  <meta name="twitter:description" content="This is the documentation for the Trade indicators." />
+  <meta name="twitter:image" content="https://github.com/SWS-Methodology/Trade_indicators/./images/FAO_logo.svg.png" />
+
+<meta name="author" content="Author: Riccardo Giubilei" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="./images/FAO_logo.svg.ico" type="image/x-icon" />
+<link rel="prev" href="indicators.html"/>
+<link rel="next" href="elements.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://github.com/SWS-Methodology/Trade_Indicators">Trade Indicators</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#list-of-indicators"><i class="fa fa-check"></i><b>1.1</b> List of indicators</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#summary"><i class="fa fa-check"></i><b>1.2</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="indicators.html"><a href="indicators.html"><i class="fa fa-check"></i><b>2</b> Indicators</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="indicators.html"><a href="indicators.html#import-dependency-ratio"><i class="fa fa-check"></i><b>2.1</b> Import Dependency Ratio</a></li>
+<li class="chapter" data-level="2.2" data-path="indicators.html"><a href="indicators.html#self-sufficiency-ratio"><i class="fa fa-check"></i><b>2.2</b> Self-Sufficiency Ratio</a></li>
+<li class="chapter" data-level="2.3" data-path="indicators.html"><a href="indicators.html#share-of-agricultural-exports-to-gdp"><i class="fa fa-check"></i><b>2.3</b> Share of Agricultural Exports to GDP</a></li>
+<li class="chapter" data-level="2.4" data-path="indicators.html"><a href="indicators.html#bilateral-trade-discrepancy-index"><i class="fa fa-check"></i><b>2.4</b> Bilateral Trade Discrepancy index</a></li>
+<li class="chapter" data-level="2.5" data-path="indicators.html"><a href="indicators.html#agricultural-trade-openness-index"><i class="fa fa-check"></i><b>2.5</b> Agricultural Trade Openness index</a></li>
+<li class="chapter" data-level="2.6" data-path="indicators.html"><a href="indicators.html#terms-of-trade-index"><i class="fa fa-check"></i><b>2.6</b> Terms of Trade index</a></li>
+<li class="chapter" data-level="2.7" data-path="indicators.html"><a href="indicators.html#import-market-concentration-index"><i class="fa fa-check"></i><b>2.7</b> Import Market Concentration index</a></li>
+<li class="chapter" data-level="2.8" data-path="indicators.html"><a href="indicators.html#export-market-concentration-index"><i class="fa fa-check"></i><b>2.8</b> Export Market Concentration index</a></li>
+<li class="chapter" data-level="2.9" data-path="indicators.html"><a href="indicators.html#revealed-comparative-advantage-index"><i class="fa fa-check"></i><b>2.9</b> Revealed Comparative Advantage index</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="inputdata.html"><a href="inputdata.html"><i class="fa fa-check"></i><b>3</b> Input data</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="inputdata.html"><a href="inputdata.html#dimensions-and-codelists"><i class="fa fa-check"></i><b>3.1</b> Dimensions and codelists</a></li>
+<li class="chapter" data-level="3.2" data-path="inputdata.html"><a href="inputdata.html#domains-and-datasets"><i class="fa fa-check"></i><b>3.2</b> Domains and datasets</a></li>
+<li class="chapter" data-level="3.3" data-path="inputdata.html"><a href="inputdata.html#datatables"><i class="fa fa-check"></i><b>3.3</b> Datatables</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="inputdata.html"><a href="inputdata.html#reporters"><i class="fa fa-check"></i><b>3.3.1</b> Reporter countries</a></li>
+<li class="chapter" data-level="3.3.2" data-path="inputdata.html"><a href="inputdata.html#keycommodities"><i class="fa fa-check"></i><b>3.3.2</b> Key commodities</a></li>
+<li class="chapter" data-level="3.3.3" data-path="inputdata.html"><a href="inputdata.html#thresholds"><i class="fa fa-check"></i><b>3.3.3</b> Thresholds</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="elements.html"><a href="elements.html"><i class="fa fa-check"></i><b>4</b> Input and output elements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="elements.html"><a href="elements.html#inputelements"><i class="fa fa-check"></i><b>4.1</b> Input elements</a></li>
+<li class="chapter" data-level="4.2" data-path="elements.html"><a href="elements.html#from-input-to-output-elements"><i class="fa fa-check"></i><b>4.2</b> From input to output elements</a></li>
+<li class="chapter" data-level="4.3" data-path="elements.html"><a href="elements.html#output-elements"><i class="fa fa-check"></i><b>4.3</b> Output elements</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plugins.html"><a href="plugins.html"><i class="fa fa-check"></i><b>5</b> Plugins</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="plugins.html"><a href="plugins.html#idr---ssr-plugin"><i class="fa fa-check"></i><b>5.1</b> IDR - SSR plugin</a></li>
+<li class="chapter" data-level="5.2" data-path="plugins.html"><a href="plugins.html#sae-ato-plugin"><i class="fa fa-check"></i><b>5.2</b> SAE-ATO plugin</a></li>
+<li class="chapter" data-level="5.3" data-path="plugins.html"><a href="plugins.html#btd-plugin"><i class="fa fa-check"></i><b>5.3</b> BTD plugin</a></li>
+<li class="chapter" data-level="5.4" data-path="plugins.html"><a href="plugins.html#tot"><i class="fa fa-check"></i><b>5.4</b> TOT plugin</a></li>
+<li class="chapter" data-level="5.5" data-path="plugins.html"><a href="plugins.html#imc-emc-plugin"><i class="fa fa-check"></i><b>5.5</b> IMC-EMC plugin</a></li>
+<li class="chapter" data-level="5.6" data-path="plugins.html"><a href="plugins.html#rca-plugin"><i class="fa fa-check"></i><b>5.6</b> RCA plugin</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Trade indicators</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="inputdata" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Input data<a href="inputdata.html#inputdata" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This section provides an exhaustive description of input data and other type of input information needed for the plugins.</p>
+<div id="dimensions-and-codelists" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Dimensions and codelists<a href="inputdata.html#dimensions-and-codelists" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The dimensions of the input datasets can be all related to the following four: areas, elements, items, and years. For each of them, a brief explanation of the codelists used and some further specifications are provided.</p>
+<p><strong>Areas.</strong> Areas are defined using the <code>geographicAreaM49</code> codelist. Additionally, the set of areas considered is limited to reporter countries only; see Section <a href="inputdata.html#reporters">3.3.1</a> for further detail.</p>
+<p><strong>Elements.</strong> The plugins for this process use many different input elements that are defined either in the <code>measuredElement</code> or in the <code>measuredElementTrade</code> codelists. A comprehensive description of all the input elements may be found in Section <a href="elements.html#inputelements">4.1</a>.</p>
+<p><strong>Items.</strong> Items are defined following the <code>measuredItemCPC</code> codelist. Additionally, the set of items considered is limited to key commodities (see Section <a href="inputdata.html#keycommodities">3.3.2</a> for details), along with aggregates F1881 (<em>Total Merchandise Trade</em>) and F1882 (<em>Agricult.Products,Total</em>), which are used for indicators 3, 5, and 9 only.</p>
+<p><strong>Years.</strong> Computations are performed for the time span defined by the reporter countries datatable (see Section <a href="inputdata.html#reporters">3.3.1</a> for details), which starts from 2000 and is continuously updated. At the time of writing, the most recent available year is 2022.</p>
+</div>
+<div id="domains-and-datasets" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Domains and datasets<a href="inputdata.html#domains-and-datasets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Plugins incorporate a parameter that enables users to select the domain from which they wish to retrieve the input data: either from <code>disseminated</code>, which is the Disseminated Datasets domain, or from the specialized ones.</p>
+<p>Table <a href="#fig:domains">3.1</a> provides the list of specialized domains and datasets considered for this process, along with the dimensions for each dataset.</p>
+<div class="float">
+<img src="images/domains.png" style="width:85.0%" alt=" Table 3.1. List of specialized domains and datasets considered for this process." />
+<div class="figcaption"> Table 3.1. List of specialized domains and datasets considered for this process.</div>
+</div>
+<p>If users choose to get data from the Disseminated Datasets domain, the following datasets are used as substitutes for those listed in Table <a href="#fig:domains">3.1</a>:<br />
+- <code>aproduction_validated</code> instead of <code>aproduction</code>.<br />
+- <code>trade_crops_livestock_disseminated</code> instead of <code>total_trade_cpc_m49</code>.</p>
+<p>Since <code>completed_tf_cpc_m49</code> and <code>ess_eco_macroind_complete</code> do not have equivalent datasets in <code>disseminated</code>, the plugins use these two regardless of whether the Disseminated Datasets domain is selected or not. This might change in the future if the two datasets become available in the <code>disseminated</code> domain.</p>
+</div>
+<div id="datatables" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Datatables<a href="inputdata.html#datatables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The plugins for this process heavily rely on auxiliary information stored in three SWS datatables. This section is dedicated to their description.</p>
+<div id="reporters" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Reporter countries<a href="inputdata.html#reporters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The reporter countries datatable is used in all the plugins to select which countries should be included in the computation of the indicators.</p>
+<p>The key information to identify the datatable is the following:<br />
+- Domain id: <code>trade-reports</code>.<br />
+- Datatable id: <code>reporters_by_year_new_version</code>.</p>
+<p>As depicted in Figure <a href="#fig:reporters">3.2</a>, the datatable has many columns:<br />
+- <code>m49</code>, which contains the country’s m49 code.<br />
+- <code>code</code>, which specifies the country’s code using various standards – this column is ignored for this process.<br />
+- <code>description</code>, which provides the country’s description.<br />
+- Other <span class="math inline">\(31\)</span> columns, labeled from <code>year_2000</code> to <code>year_2030</code>, which indicate whether the country has been a reporter country or not in the corresponding year.</p>
+<div class="float">
+<img src="images/dt_reporters.png" alt=" Figure 3.2. Sample screenshot of the reporters countries datatable in SWS." />
+<div class="figcaption"> Figure 3.2. Sample screenshot of the reporters countries datatable in SWS.</div>
+</div>
+<p>The datatable is used to select the countries for which the indicators are to be computed. In the columns referred to years, the datatable contains <code>X</code> whenever the corresponding country is a reporter country in that year; otherwise, the cell is empty. At the time of writing, columns for years from <span class="math inline">\(2023\)</span> to <span class="math inline">\(2030\)</span> are empty, implying that calculations should be made only for years ranging from <span class="math inline">\(2000\)</span> to <span class="math inline">\(2022\)</span>.</p>
+<p>The column <code>code</code> is included in the datatable for other purposes, and is disregarded for this process. There are <span class="math inline">\(5\)</span> countries that have two distinct <code>code</code>s for different years, yet maintain a unique <code>m49</code> code across all years. The current <code>description</code> of these countries is: <em>China,Taiwan</em>, <em>Croatia</em>, <em>Eswatini</em>, <em>North Macedonia</em>, <em>United Kingdom</em>. In such cases, the resulting two rows referring to the same country are merged, preserving the <code>X</code>’s from both rows (which originally did not overlap).</p>
+<p>While the number of reporter countries may vary for different years, the total number of countries encompassed in the datatable is <span class="math inline">\(198\)</span>.</p>
+</div>
+<div id="keycommodities" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Key commodities<a href="inputdata.html#keycommodities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The key commodities datatable is used in all the plugins to select which commodities should be included in the computation of the indicators.</p>
+<p>The key information to identify the datatable is the following:<br />
+- Domain id: <code>trade-reference-files</code>.<br />
+- Datatable id: <code>key_commodities_codes</code>.</p>
+<p>As depicted in Figure <a href="#fig:commodities">3.3</a>, the datatable has three columns:<br />
+- <code>commodity</code>, which contains the commodity’s description.<br />
+- <code>commodity_code</code>, which specifies the commodity’s CPC code.<br />
+- <code>livestock</code>, which is a binary value denoting if the commodity is livestock or not.</p>
+<div class="float">
+<img src="images/dt_key_commodities.png" alt=" Figure 3.3. Sample screenshot of the key commodities datatable in SWS." />
+<div class="figcaption"> Figure 3.3. Sample screenshot of the key commodities datatable in SWS.</div>
+</div>
+<p>The number of key commodities included in the datatable is <span class="math inline">\(54\)</span>. The plugins exclusively use the <code>commodity_code</code> column.</p>
+</div>
+<div id="thresholds" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Thresholds<a href="inputdata.html#thresholds" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The thresholds datatable is used for indicators <span class="math inline">\(7\)</span> and <span class="math inline">\(8\)</span> to count the total number of importing and exporting countries for a given commodity <span class="math inline">\(i\)</span>, respectively.</p>
+<p>The key information to identify the datatable is the following:<br />
+- Domain id: <code>trade-reference-files</code>.<br />
+- Datatable id: <code>trade_outlier_country_thresholds</code>.</p>
+<p>As depicted in Figure <a href="#fig:thresholds">3.4</a>, the datatable has two columns:<br />
+- <code>area</code>, which contains the area’s m49 code.<br />
+- <code>threshold</code>, which gives the corresponding threshold expressed in tonnes.</p>
+<div class="float">
+<img src="images/dt_thresholds.png" alt=" Figure 3.4. Sample screenshot of the thresholds datatable in SWS." />
+<div class="figcaption"> Figure 3.4. Sample screenshot of the thresholds datatable in SWS.</div>
+</div>
+<p>The datatable exclusively includes countries. Each country has its own threshold value that is applied to all commodities. The total number of importing and exporting countries for a given commodity <span class="math inline">\(i\)</span> only consider countries whose import or export quantities, respectively, exceed the threshold for that country.</p>
+<p>If a country lacks a corresponding threshold entry in the datatable, a conventional threshold value of <span class="math inline">\(1000\)</span> is applied.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="indicators.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="elements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/SWS-Methodology/Trade_indicators/edit/master/02InputData.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/SWS-Methodology/Trade_indicators/blob/master/02InputData.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
