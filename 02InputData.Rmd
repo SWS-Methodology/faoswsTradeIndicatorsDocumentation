@@ -23,7 +23,7 @@ Plugins incorporate a parameter that enables users to select the domain from whi
 
 Table \@ref(fig:domains) provides the list of specialized domains and datasets considered for this process, along with the dimensions for each dataset.
 
-![(\#fig:domains) Table 3.1. List of specialized domains and datasets considered for this process.](./images/domains.png){width=85%}
+![(\#fig:domains) Table 3.1. List of specialized domains and datasets considered for this process.](./images/domains.png){width=60%}
 
 If users choose to get data from the Disseminated Datasets domain, the following datasets are used as substitutes for those listed in Table \@ref(fig:domains):\
 - `aproduction_validated` instead of `aproduction`.\
