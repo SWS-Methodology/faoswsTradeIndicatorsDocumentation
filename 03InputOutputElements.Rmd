@@ -58,8 +58,8 @@ Each of the $9$ elements correspond to a different indicator. The BTD has two di
     $507$                 Import Market Concentration              Index    
     $508$                 Export Market Concentration              Index    
     $509$               Revealed Comparative Advantage             Index  
-    $509.01$       Revealed Comparative Advantage - T0010          Index
-    $509.02$       Revealed Comparative Advantage - F1882          Index
+    $509.01$           Revealed Comparative Advantage - T0010      Index
+    $509.02$           Revealed Comparative Advantage - F1882      Index
 
 : (#tab:output) Output elements.
 
