@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Plugins | Trade indicators</title>
   <meta name="description" content="This is the documentation for the Trade indicators." />
-  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Plugins | Trade indicators" />
   <meta property="og:type" content="book" />
@@ -85,12 +85,12 @@
 <li class="chapter" data-level="2.1" data-path="indicators.html"><a href="indicators.html#import-dependency-ratio"><i class="fa fa-check"></i><b>2.1</b> Import Dependency Ratio</a></li>
 <li class="chapter" data-level="2.2" data-path="indicators.html"><a href="indicators.html#self-sufficiency-ratio"><i class="fa fa-check"></i><b>2.2</b> Self-Sufficiency Ratio</a></li>
 <li class="chapter" data-level="2.3" data-path="indicators.html"><a href="indicators.html#share-of-agricultural-exports-to-gdp"><i class="fa fa-check"></i><b>2.3</b> Share of Agricultural Exports to GDP</a></li>
-<li class="chapter" data-level="2.4" data-path="indicators.html"><a href="indicators.html#bilateral-trade-discrepancy-index"><i class="fa fa-check"></i><b>2.4</b> Bilateral Trade Discrepancy index</a></li>
-<li class="chapter" data-level="2.5" data-path="indicators.html"><a href="indicators.html#agricultural-trade-openness-index"><i class="fa fa-check"></i><b>2.5</b> Agricultural Trade Openness index</a></li>
-<li class="chapter" data-level="2.6" data-path="indicators.html"><a href="indicators.html#terms-of-trade-index"><i class="fa fa-check"></i><b>2.6</b> Terms of Trade index</a></li>
-<li class="chapter" data-level="2.7" data-path="indicators.html"><a href="indicators.html#import-market-concentration-index"><i class="fa fa-check"></i><b>2.7</b> Import Market Concentration index</a></li>
-<li class="chapter" data-level="2.8" data-path="indicators.html"><a href="indicators.html#export-market-concentration-index"><i class="fa fa-check"></i><b>2.8</b> Export Market Concentration index</a></li>
-<li class="chapter" data-level="2.9" data-path="indicators.html"><a href="indicators.html#revealed-comparative-advantage-index"><i class="fa fa-check"></i><b>2.9</b> Revealed Comparative Advantage index</a></li>
+<li class="chapter" data-level="2.4" data-path="indicators.html"><a href="indicators.html#bilateral-trade-discrepancy"><i class="fa fa-check"></i><b>2.4</b> Bilateral Trade Discrepancy</a></li>
+<li class="chapter" data-level="2.5" data-path="indicators.html"><a href="indicators.html#agricultural-trade-openness"><i class="fa fa-check"></i><b>2.5</b> Agricultural Trade Openness</a></li>
+<li class="chapter" data-level="2.6" data-path="indicators.html"><a href="indicators.html#terms-of-trade-indicator"><i class="fa fa-check"></i><b>2.6</b> Terms of Trade indicator</a></li>
+<li class="chapter" data-level="2.7" data-path="indicators.html"><a href="indicators.html#import-market-concentration"><i class="fa fa-check"></i><b>2.7</b> Import Market Concentration</a></li>
+<li class="chapter" data-level="2.8" data-path="indicators.html"><a href="indicators.html#export-market-concentration"><i class="fa fa-check"></i><b>2.8</b> Export Market Concentration</a></li>
+<li class="chapter" data-level="2.9" data-path="indicators.html"><a href="indicators.html#revealed-comparative-advantage"><i class="fa fa-check"></i><b>2.9</b> Revealed Comparative Advantage</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="inputdata.html"><a href="inputdata.html"><i class="fa fa-check"></i><b>3</b> Input data</a>
 <ul>
@@ -101,11 +101,12 @@
 <li class="chapter" data-level="3.3.1" data-path="inputdata.html"><a href="inputdata.html#reporters"><i class="fa fa-check"></i><b>3.3.1</b> Reporter countries</a></li>
 <li class="chapter" data-level="3.3.2" data-path="inputdata.html"><a href="inputdata.html#keycommodities"><i class="fa fa-check"></i><b>3.3.2</b> Key commodities</a></li>
 <li class="chapter" data-level="3.3.3" data-path="inputdata.html"><a href="inputdata.html#thresholds"><i class="fa fa-check"></i><b>3.3.3</b> Thresholds</a></li>
+<li class="chapter" data-level="3.3.4" data-path="inputdata.html"><a href="inputdata.html#inputelements"><i class="fa fa-check"></i><b>3.3.4</b> Input elements</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="elements.html"><a href="elements.html"><i class="fa fa-check"></i><b>4</b> Input and output elements</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="elements.html"><a href="elements.html#inputelements"><i class="fa fa-check"></i><b>4.1</b> Input elements</a></li>
+<li class="chapter" data-level="4.1" data-path="inputdata.html"><a href="inputdata.html#inputelements"><i class="fa fa-check"></i><b>4.1</b> Input elements</a></li>
 <li class="chapter" data-level="4.2" data-path="elements.html"><a href="elements.html#from-input-to-output-elements"><i class="fa fa-check"></i><b>4.2</b> From input to output elements</a></li>
 <li class="chapter" data-level="4.3" data-path="elements.html"><a href="elements.html#output-elements"><i class="fa fa-check"></i><b>4.3</b> Output elements</a></li>
 </ul></li>
@@ -142,21 +143,23 @@
 <h4>List of plugins<a href="plugins.html#list-of-plugins" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The list of plugins, and the set of indicators each of them allows to compute, is the following:<br />
 1. <strong>IDR-SSR plugin</strong>: Import Dependency Ratio and Self-Sufficiency Ratio.<br />
-2. <strong>SAE-ATO plugin</strong>: Share of Agricultural Exports to GDP and Agricultural Trade Openness index.<br />
-3. <strong>BTD plugin</strong>: Bilateral Trade Discrepancy index.<br />
-4. <strong>TOT plugin</strong>: Terms of Trade index.<br />
-5. <strong>IMC-EMC plugin</strong>: Import Market Concentration index and Export Market Concentration index.<br />
-6. <strong>RCA plugin</strong>: Revealed Comparative Advantage index.</p>
+2. <strong>SAE-ATO plugin</strong>: Share of Agricultural Exports to GDP and Agricultural Trade Openness.<br />
+3. <strong>BTD plugin</strong>: Bilateral Trade Discrepancy.<br />
+4. <strong>TOT plugin</strong>: Terms of Trade.<br />
+5. <strong>IMC-EMC plugin</strong>: Import Market Concentration and Export Market Concentration.<br />
+6. <strong>RCA plugin</strong>: Revealed Comparative Advantage.</p>
 </div>
 <div id="common-features" class="section level4 unnumbered hasAnchor">
 <h4>Common features<a href="plugins.html#common-features" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>All the plugins have the following common features:<br />
 - The use of the reporter countries datatable (see Section <a href="inputdata.html#reporters">3.3.1</a>) to select countries and years.<br />
 - The use of the key commodities datatable (see Section <a href="inputdata.html#keycommodities">3.3.2</a>) to select items.<br />
+- The use of the input elements datatable (see Section @(inputelements)) to select elements while avoiding hardcoding.<br />
 - The generation of NAs for all cases with incomplete (having missing values) or all-zero (all quantities are zero) input data.<br />
 - One or more mandatory input parameters to choose to get input data either from the Disseminated Datasets domain or from the specialized ones. These parameters are of type <em>list</em>, and the choice is between <code>Disseminated</code> and the applicable specialized domain. The only exception is the TOT plugin; see Section <a href="plugins.html#tot">5.4</a> for details.<br />
 - Two optional input parameters, <code>Starting year</code> and <code>Ending year</code>, to refine the time span for which the plugins are computed. They are of type numeric and can be defined with any value between <span class="math inline">\(1900\)</span> and <span class="math inline">\(2100\)</span>, as long as the <code>Starting year</code> is smaller than the <code>Ending year</code>.<br />
-- An optional input parameter, <code>Limit results to query only</code>, to choose whether to limit the results to the keys from the query only or not. It is of type <em>list</em>, and the choice is between <code>Yes</code> and <code>No</code>. If it is equal to <code>Yes</code>, then the results are returned only for the keys included in the query. If <code>No</code>, the results are returned for all available data. Since, in the output datasets, the roots for each dimension usually include more keys than those actually considered for the computations (because the latter have been refined using the input datatables), some further adjustments are necessary when <code>Limit results to query only</code> is <code>Yes</code>. Specifically, any key from the query that is not included in those considered for the computations will be ignored. If all the keys from the query are not included in those considered for the computations, a warning will be thrown and the results will be returned for all available data.</p>
+- An optional input parameter, <code>Limit results to query only</code>, to choose whether to limit the results to the keys from the query only or not. It is of type <em>list</em>, and the choice is between <code>Yes</code> and <code>No</code>. If it is equal to <code>Yes</code>, then the results are returned only for the keys included in the query. If <code>No</code>, the results are returned for all available data. Since, in the output datasets, the roots for each dimension usually include more keys than those actually considered for the computations (because the latter have been refined using the input datatables), some further adjustments are necessary when <code>Limit results to query only</code> is <code>Yes</code>. Specifically, any key from the query that is not included in those considered for the computations will be ignored. If all the keys from the query are not included in those considered for the computations, a warning will be thrown and the results will be returned for all available data.
+- A “wipe data” feature that is applied whenever <code>Limit results to query only</code> is <code>No</code>. It removes all pre-existing data points corresponding to the years for which the plugin is run.</p>
 </div>
 <div id="idr---ssr-plugin" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> IDR - SSR plugin<a href="plugins.html#idr---ssr-plugin" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -164,14 +167,14 @@
 - <strong>Name:</strong> <code>ti_IDR_SSR</code>.<br />
 - <strong>Input datasets:</strong> <code>aproduction_validated</code> and <code>trade_crops_livestock_disseminated</code> from<code>disseminated</code> when working with disseminated data, <code>aproduction</code> from <code>agriculture</code> and <code>total_trade_cpc_m49</code> from <code>trade</code> otherwise.<br />
 - <strong>Input elements:</strong> <span class="math inline">\(5510\)</span>, <span class="math inline">\(5610\)</span>, and <span class="math inline">\(5910\)</span>.<br />
-- <strong>Input datatables:</strong> <code>reporters_by_year_new_version</code> from <code>trade-reports</code> and <code>key_commodities_codes</code> from <code>trade-reference-files</code>.<br />
+- <strong>Input datatables:</strong> <code>reporters_by_year_trade_indicators</code> from <code>trade-reports</code>, <code>key_commodities_codes</code> and <code>ti_input_elements</code> from <code>trade-reference-files</code>.<br />
 - <strong>Output elements:</strong> <span class="math inline">\(501\)</span> and <span class="math inline">\(502\)</span>.<br />
 - <strong>Output dataset:</strong> <code>trade_indicators</code>.</p>
 <p>In this plugin, whenever production plus imports exactly counterbalances imports (making the indicators have a denominator equal to <span class="math inline">\(0\)</span>), the result will be NA by convention.</p>
-<p>The workflow of the IDR-SSR plugin is summarized in Figure <a href="#fig:plugin1">5.1</a>.</p>
-<div class="float">
+<p>The workflow of the IDR-SSR plugin is summarized in Figure <a href="plugins.html#fig:plugin1">5.1</a>.</p>
+<div class="float"><span style="display:block;" id="fig:plugin1"></span>
 <img src="images/plugin1.png" alt=" Figure 5.1. Workflow of the IDR-SSR plugin." />
-<div class="figcaption"> Figure 5.1. Workflow of the IDR-SSR plugin.</div>
+<div class="figcaption">Figure 5.1:  Figure 5.1. Workflow of the IDR-SSR plugin.</div>
 </div>
 </div>
 <div id="sae-ato-plugin" class="section level2 hasAnchor" number="5.2">
@@ -180,13 +183,13 @@
 - <strong>Name:</strong> <code>ti_SAE_ATO</code>.<br />
 - <strong>Input datasets:</strong> <code>trade_crops_livestock_disseminated</code> from <code>disseminated</code> and <code>ess_eco_macroind_complete</code> from <code>macro_stats</code> when working with disseminated data, <code>total_trade_cpc_m49</code> from <code>trade</code> and <code>ess_eco_macroind_complete</code> from <code>macro_stats</code> otherwise.<br />
 - <strong>Input elements:</strong> <span class="math inline">\(5622\)</span>, <span class="math inline">\(5922\)</span>, and <span class="math inline">\(8003\)</span>.<br />
-- <strong>Input datatables:</strong> <code>reporters_by_year_new_version</code> from <code>trade-reports</code>.<br />
+- <strong>Input datatables:</strong> <code>reporters_by_year_trade_indicators</code> from <code>trade-reports</code> and <code>ti_input_elements</code> from <code>trade-reference-files</code>.<br />
 - <strong>Output elements:</strong> <span class="math inline">\(503\)</span> and <span class="math inline">\(505\)</span>.<br />
 - <strong>Output dataset:</strong> <code>trade_indicators</code>.</p>
-<p>The workflow of the SAE-ATO plugin is summarized in Figure <a href="#fig:plugin2">5.2</a>.</p>
-<div class="float">
+<p>The workflow of the SAE-ATO plugin is summarized in Figure <a href="plugins.html#fig:plugin2">5.2</a>.</p>
+<div class="float"><span style="display:block;" id="fig:plugin2"></span>
 <img src="images/plugin2.png" alt=" Figure 5.2. Workflow of the SAE-ATO plugin." />
-<div class="figcaption"> Figure 5.2. Workflow of the SAE-ATO plugin.</div>
+<div class="figcaption">Figure 5.2:  Figure 5.2. Workflow of the SAE-ATO plugin.</div>
 </div>
 </div>
 <div id="btd-plugin" class="section level2 hasAnchor" number="5.3">
@@ -195,14 +198,14 @@
 - <strong>Name:</strong> <code>ti_BTD</code>.<br />
 - <strong>Input dataset:</strong> <code>completed_tf_cpc_m49</code> from <code>trade</code>.<br />
 - <strong>Input elements:</strong> <span class="math inline">\(5610\)</span> and <span class="math inline">\(5910\)</span>.<br />
-- <strong>Input datatables:</strong> <code>reporters_by_year_new_version</code> from <code>trade-reports</code> and <code>key_commodities_codes</code> from <code>trade-reference-files</code>.<br />
+- <strong>Input datatables:</strong> <code>reporters_by_year_trade_indicators</code> from <code>trade-reports</code>, <code>key_commodities_codes</code> and <code>ti_input_elements</code> from <code>trade-reference-files</code>.<br />
 - <strong>Output elements:</strong> <span class="math inline">\(504.01\)</span> and <span class="math inline">\(504.02\)</span>, and possibly intermediate quantities <span class="math inline">\(504.\text{d}1\)</span> and <span class="math inline">\(504.\text{d}2\)</span>.<br />
 - <strong>Output dataset:</strong> <code>trade_indicators_bilateral</code>.</p>
 <p>The BTD plugin has an additional optional input parameter, <code>Intermediate quantities</code>, to choose if the intermediate quantities should be incorporated in the output or not. It is of type <em>list</em>, and the choice is between <code>Yes</code> and <code>No</code>. If it is equal to <code>Yes</code>, then each intermediate quantity is included if either <code>Limit results to query only</code> is equal to <code>No</code>, if the corresponding element is selected in the query, or if the corresponding indicator is computed.</p>
-<p>The workflow of the BTD plugin is summarized in Figure <a href="#fig:plugin3">5.3</a>.</p>
-<div class="float">
+<p>The workflow of the BTD plugin is summarized in Figure <a href="plugins.html#fig:plugin3">5.3</a>.</p>
+<div class="float"><span style="display:block;" id="fig:plugin3"></span>
 <img src="images/plugin3.png" alt=" Figure 5.3. Workflow of the BTD plugin." />
-<div class="figcaption"> Figure 5.3. Workflow of the BTD plugin.</div>
+<div class="figcaption">Figure 5.3:  Figure 5.3. Workflow of the BTD plugin.</div>
 </div>
 </div>
 <div id="tot" class="section level2 hasAnchor" number="5.4">
@@ -211,15 +214,15 @@
 - <strong>Name:</strong> <code>ti_TOT</code>.<br />
 - <strong>Input datasets:</strong> <code>total_trade_cpc_m49</code> from <code>trade</code>.<br />
 - <strong>Input elements:</strong> <span class="math inline">\(5630\)</span> and <span class="math inline">\(5930\)</span>.
-- <strong>Input datatables:</strong> <code>reporters_by_year_new_version</code> from <code>trade-reports</code> and <code>key_commodities_codes</code> from <code>trade-reference-files</code>.<br />
+- <strong>Input datatables:</strong> <code>reporters_by_year_trade_indicators</code> from <code>trade-reports</code>, <code>key_commodities_codes</code> and <code>ti_input_elements</code> from <code>trade-reference-files</code>.<br />
 - <strong>Output elements:</strong> <span class="math inline">\(506\)</span>.<br />
 - <strong>Output dataset:</strong> <code>trade_indicators</code>.</p>
 <p>In this case, no input domain parameter is available because input elements <span class="math inline">\(5630\)</span> and <span class="math inline">\(5930\)</span> are not published in the Disseminated Datasets domain.</p>
 <p>Whenever the value of the input elements is not available for one of the years that are needed to compute the average around the base year (which are <span class="math inline">\(2014\)</span>, <span class="math inline">\(2015\)</span>, and <span class="math inline">\(2016\)</span>), the plugin returns NA.</p>
-<p>The workflow of the TOT plugin is summarized in Figure <a href="#fig:plugin4">5.4</a>.</p>
-<div class="float">
+<p>The workflow of the TOT plugin is summarized in Figure <a href="plugins.html#fig:plugin4">5.4</a>.</p>
+<div class="float"><span style="display:block;" id="fig:plugin4"></span>
 <img src="images/plugin4.png" alt=" Figure 5.4. Workflow of the TOT plugin." />
-<div class="figcaption"> Figure 5.4. Workflow of the TOT plugin.</div>
+<div class="figcaption">Figure 5.4:  Figure 5.4. Workflow of the TOT plugin.</div>
 </div>
 </div>
 <div id="imc-emc-plugin" class="section level2 hasAnchor" number="5.5">
@@ -228,33 +231,34 @@
 - <strong>Name:</strong> <code>ti_IMC_EMC</code>.<br />
 - <strong>Input datasets:</strong> <code>trade_crops_livestock_disseminated</code> from <code>disseminated</code> when working with disseminated data, <code>total_trade_cpc_m49</code> from <code>trade</code> otherwise.<br />
 - <strong>Input elements:</strong> <span class="math inline">\(5610\)</span>, <span class="math inline">\(5910\)</span>, <span class="math inline">\(5622\)</span>, and <span class="math inline">\(5922\)</span>.<br />
-- <strong>Input datatables:</strong> <code>reporters_by_year_new_version</code> from <code>trade-reports</code>, <code>key_commodities_codes</code> and <code>trade_outlier_country_thresholds</code> from <code>trade-reference-files</code>.<br />
+- <strong>Input datatables:</strong> <code>reporters_by_year_trade_indicators</code> from <code>trade-reports</code>, and <code>key_commodities_codes</code>, <code>trade_outlier_country_thresholds</code>, and <code>ti_input_elements</code> from <code>trade-reference-files</code>.<br />
 - <strong>Output elements:</strong> <span class="math inline">\(507\)</span> and <span class="math inline">\(508\)</span>.<br />
 - <strong>Output dataset:</strong> <code>trade_indicators</code>.</p>
 <p>Please note that, when computing both indicators, world aggregates only
 include reporter countries.</p>
 <p>In this plugin, the IMC and EMC indicators only consider above-thresholds countries for all the variables in the formula, i.e., the sum cannot include countries that are below the threshold. However, to ensure complete consistency between the number of terms in the sum and the total number of importing/exporting countries, it also excludes from the latter the countries for which the import/export value is NA (as they are excluded from the sum).</p>
-<p>Whenever the total number of importing/exporting countries is <span class="math inline">\(1\)</span>, the value of the indicator is <span class="math inline">\(0/0=\)</span> NaN. In this case, the plugin returns <span class="math inline">\(1\)</span>, because the concentration is maximal.</p>
-<p>The workflow of the IMC-EMC plugin is summarized in Figure <a href="#fig:plugin5">5.5</a>.</p>
-<div class="float">
+<p>Whenever the total number of importing/exporting countries is <span class="math inline">\(1\)</span>, the value of the indicator is <span class="math inline">\(0/0=\)</span> NaN. In this case, the plugin returns <span class="math inline">\(1\)</span> as it implies the maximum concentration.</p>
+<p>IMC and EMC values characterize items and measure their global market concentration. This also implies that they are shared across all countries. For this reason, the plugin assigns IMC and EMC values not to countries but to the geographical aggregate <code>World [1]</code>.</p>
+<p>The workflow of the IMC-EMC plugin is summarized in Figure <a href="plugins.html#fig:plugin5">5.5</a>.</p>
+<div class="float"><span style="display:block;" id="fig:plugin5"></span>
 <img src="images/plugin5.png" alt=" Figure 5.5. Workflow of the IMC-EMC plugin." />
-<div class="figcaption"> Figure 5.5. Workflow of the IMC-EMC plugin.</div>
+<div class="figcaption">Figure 5.5:  Figure 5.5. Workflow of the IMC-EMC plugin.</div>
 </div>
 </div>
 <div id="rca-plugin" class="section level2 hasAnchor" number="5.6">
 <h2><span class="header-section-number">5.6</span> RCA plugin<a href="plugins.html#rca-plugin" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The main features of the RCA plugin are the following:<br />
 - <strong>Name:</strong> <code>ti_RCA</code>.<br />
-- <strong>Input datasets:</strong> <code>trade_crops_livestock_disseminated</code> from<code>disseminated</code> when working with disseminated data, <code>total_trade_cpc_m49</code> from <code>trade</code> otherwise.<br />
+- <strong>Input datasets:</strong> <code>trade_crops_livestock_disseminated</code> from <code>disseminated</code> when working with disseminated data, <code>total_trade_cpc_m49</code> from <code>trade</code> otherwise.<br />
 - <strong>Input elements:</strong> <span class="math inline">\(5622\)</span> and <span class="math inline">\(5922\)</span>.<br />
-- <strong>Input datatables:</strong> <code>reporters_by_year_new_version</code> from <code>trade-reports</code> and <code>key_commodities_codes</code> from <code>trade-reference-files</code>.<br />
+- <strong>Input datatables:</strong> <code>reporters_by_year_trade_indicators</code> from <code>trade-reports</code>, <code>key_commodities_codes</code> and <code>ti_input_elements</code> from <code>trade-reference-files</code>.<br />
 - <strong>Output elements:</strong> <span class="math inline">\(509.01\)</span> and <span class="math inline">\(509.02\)</span>.<br />
 - <strong>Output dataset:</strong> <code>trade_indicators</code>.</p>
 <p>Please note that, when computing the RCA, world aggregates only include reporter countries.</p>
-<p>The workflow of the RCA plugin is summarized in Figure <a href="#fig:plugin6">5.6</a>.</p>
-<div class="float">
+<p>The workflow of the RCA plugin is summarized in Figure <a href="plugins.html#fig:plugin6">5.6</a>.</p>
+<div class="float"><span style="display:block;" id="fig:plugin6"></span>
 <img src="images/plugin6.png" alt=" Figure 5.6. Workflow of the RCA plugin." />
-<div class="figcaption"> Figure 5.6. Workflow of the RCA plugin.</div>
+<div class="figcaption">Figure 5.6:  Figure 5.6. Workflow of the RCA plugin.</div>
 </div>
 
 </div>
@@ -279,42 +283,42 @@ include reporter countries.</p>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/SWS-Methodology/Trade_indicators/edit/master/04Plugins.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": "https://github.com/SWS-Methodology/Trade_indicators/blob/master/04Plugins.Rmd",
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/SWS-Methodology/Trade_indicators/edit/master/04Plugins.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": "https://github.com/SWS-Methodology/Trade_indicators/blob/master/04Plugins.Rmd",
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

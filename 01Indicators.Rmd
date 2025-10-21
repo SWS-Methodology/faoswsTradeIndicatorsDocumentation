@@ -82,9 +82,9 @@ where $^{\text{agr}}X^v_{j}$ is the export value of agricultural products for ar
 The Share of Agricultural Exports to GDP shows the overall contribution of agricultural exports to GDP.
 
 
-## Bilateral Trade Discrepancy index
+## Bilateral Trade Discrepancy
 
-The Bilateral Trade Discrepancy index (BTD) is a measure of the bilateral trade asymmetries or discrepancies.\
+The Bilateral Trade Discrepancy indicator (BTD) is a measure of the bilateral trade asymmetries or discrepancies.\
 For an importing country $A$, the BTD is defined as
 
 ```{=tex}
@@ -107,16 +107,16 @@ For an exporting country $A$, the BTD is defined as
 
 where $M^q_{i[AB]}$ and $X^q_{i[AB]}$ are the import and export quantities of commodity $i$ from area $A$ to area $B$, respectively, indicating that goods flow from $A$ to $B$. In this case, the BTD quantifies the difference between the imports reported by $B$ from $A$ ($M^q_{i[AB]}$) and the exports reported by $A$ to $B$ ($X^q_{i[AB]}$) as a proportion of the imports reported by $B$ from $A$. Combining Equation \@ref(eq:btdimp) with Equation \@ref(eq:btdexp), it is straightforward to see that $\text{BTD}_{iA}^M = \text{BTD}_{iB}^X$ and $\text{BTD}_{iA}^X = \text{BTD}_{iB}^M$.
 
-The Bilateral Trade Discrepancy index provides a general understanding of the tendencies of under-reporting or over-reporting in international trade quantities between countries. The magnitude of the discrepancy serves as an indicator for the severity of the issue.
+The Bilateral Trade Discrepancy indicator provides a general understanding of the tendencies of under-reporting or over-reporting in international trade quantities between countries. The magnitude of the discrepancy serves as an indicator for the severity of the issue.
 
-When goods flow from $B$ to $A$, a positive value of the index $\text{BTD}_{iA}^M$ implies that the reported exports are lower than the reported imports. This suggests that either $A$ is over-reporting imports from $B$, $B$ is under-reporting exports to $A$, or both. Conversely, if $\text{BTD}_{iA}^M$ is negative, the reported exports exceed the reported imports, indicating that either $A$ is under-reporting imports from $B$, $B$ is over-reporting exports to $A$, or both.
+When goods flow from $B$ to $A$, a positive value of the indicator $\text{BTD}_{iA}^M$ implies that the reported exports are lower than the reported imports. This suggests that either $A$ is over-reporting imports from $B$, $B$ is under-reporting exports to $A$, or both. Conversely, if $\text{BTD}_{iA}^M$ is negative, the reported exports exceed the reported imports, indicating that either $A$ is under-reporting imports from $B$, $B$ is over-reporting exports to $A$, or both.
 
-When goods flow from $A$ to $B$, a positive value of the index $\text{BTD}_{iA}^X$ implies that the reported exports are lower than the reported imports. This suggests that either $A$ is under-reporting exports to $B$, $B$ is over-reporting imports from $A$, or both. Conversely, if $\text{BTD}_{iA}^M$ is negative, the reported exports exceed the reported imports, indicating that either $A$ is over-reporting exports to $B$, $B$ is under-reporting imports from $A$, or both.
+When goods flow from $A$ to $B$, a positive value of the indicator $\text{BTD}_{iA}^X$ implies that the reported exports are lower than the reported imports. This suggests that either $A$ is under-reporting exports to $B$, $B$ is over-reporting imports from $A$, or both. Conversely, if $\text{BTD}_{iA}^M$ is negative, the reported exports exceed the reported imports, indicating that either $A$ is over-reporting exports to $B$, $B$ is under-reporting imports from $A$, or both.
 
 
-## Agricultural Trade Openness index
+## Agricultural Trade Openness
 
-The Agricultural Trade Openness index (ATO) is defined as
+The Agricultural Trade Openness indicator (ATO) is defined as
 
 ```{=tex}
 \begin{equation} 
@@ -127,12 +127,12 @@ The Agricultural Trade Openness index (ATO) is defined as
 
 where $^{\text{agr}}M^v_{j}$ and $^{\text{agr}}X^v_{j}$ are the import and export values of agricultural products for area $j$, respectively, and $\text{GDP}_j$ is the Gross Domestic Product for area $j$.
 
-The Agricultural Trade Openness index measures the importance of international trade in goods relative to the domestic economic output of an economy.
+The Agricultural Trade Openness indicator measures the importance of international trade in goods relative to the domestic economic output of an economy.
 
 
-## Terms of Trade index
+## Terms of Trade indicator
 
-The Terms of Trade index (TOT) is defined as
+The Terms of Trade indicator (TOT) is defined as
 
 ```{=tex}
 \begin{equation} 
@@ -143,12 +143,12 @@ The Terms of Trade index (TOT) is defined as
 
 where $\text{UVI}^M_{ij, t}$ and $\text{UVI}^X_{ij, t}$ are the import and export Unit Value Indices of commodity $i$ for country $j$ at time $t$, respectively, and $\text{UVI}^M_{ij, \overline{2015}}$ and $\text{UVI}^X_{ij, \overline{2015}}$ are these values' three-year averages centered in $2015$, which, in this case, serves as the base year.
 
-The Terms of Trade index indicates how much the relative price between exports and imports has changed with respect to the base year.
+The Terms of Trade indicator measures how much the relative price between exports and imports has changed with respect to the base year.
 
 
-## Import Market Concentration index
+## Import Market Concentration 
 
-The Import Market Concentration index (IMC) is defined as
+The Import Market Concentration indicator (IMC) is defined as
 
 ```{=tex}
 \begin{equation} 
@@ -159,12 +159,12 @@ The Import Market Concentration index (IMC) is defined as
 
 where $M^v_{ij}$ is the import value of commodity $i$ for area $j$, $M^v_{iW}$ is the import value of commodity $i$ for the area *World*, and $N^M_i$ is the total number of importing countries for commodity $i$. The calculation of $N^M_i$ relies on import quantities, and it involves applying country-specific thresholds to determine whether a particular country is classified as an importer of commodity $i$. When $N^M_i = 1$, the value of $\text{IMC}_i$ is conventionally set to $1$.
 
-The Import Market Concentration index measures, for each product, the level of import market concentration by country of destination. It allows assessing whether a large portion of commodity imports is acquired by a small number of countries or, conversely, if imports are evenly distributed among many countries.
+The Import Market Concentration indicator measures, for each product, the level of import market concentration by country of destination. It allows assessing whether a large portion of commodity imports is acquired by a small number of countries or, conversely, if imports are evenly distributed among many countries.
 
 
-## Export Market Concentration index
+## Export Market Concentration 
 
-The Export Market Concentration index (EMC) is defined as
+The Export Market Concentration indicator (EMC) is defined as
 
 ```{=tex}
 \begin{equation} 
@@ -175,12 +175,12 @@ The Export Market Concentration index (EMC) is defined as
 
 where $X^v_{ij}$ is the export values of commodity $i$ for area $j$, $X^v_{iW}$ is the export value of commodity $i$ for the area *World*, and $N^X_i$ is the total number of exporting countries for commodity $i$. The calculation of $N^X_i$ relies on export quantities, and it involves applying country-specific thresholds to determine whether a particular country is classified as an exporter of commodity $i$. When $N^X_i = 1$, the value of $\text{EMC}_i$ is conventionally set to $1$.
 
-The Export Market Concentration index measures, for each product, the level of export market concentration by country of origin. It allows assessing whether a large portion of commodity exports is accounted for by a small number of countries or, conversely, if exports are evenly distributed among many countries.
+The Export Market Concentration indicator measures, for each product, the level of export market concentration by country of origin. It allows assessing whether a large portion of commodity exports is accounted for by a small number of countries or, conversely, if exports are evenly distributed among many countries.
 
 
-## Revealed Comparative Advantage index
+## Revealed Comparative Advantage
 
-The Revealed Comparative Advantage index (RCA) is defined as
+The Revealed Comparative Advantage indicator (RCA) is defined as
 
 ```{=tex}
 \begin{equation} 
@@ -191,4 +191,4 @@ The Revealed Comparative Advantage index (RCA) is defined as
 
 where $X^v_{ij}$ and $X^v_{iW}$ are the export value of commodity $i$ for area $j$ and for the area *World*, respectively, while $^{\text{agr}}X^v_{j}$ and $^{\text{agr}}X^v_{W}$ are the corresponding aggregates of agricultural products.
 
-The Revealed Comparative Advantage index is a proxy for the country's export potential. The RCA indicates whether a country is expanding the range of products in which it possesses trade potential, as opposed to situations where the number of products that can be competitively exported remains static.
+The Revealed Comparative Advantage indicator is a proxy for the country's export potential. The RCA indicates whether a country is expanding the range of products in which it possesses trade potential, as opposed to situations where the number of products that can be competitively exported remains static.

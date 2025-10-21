@@ -27,6 +27,8 @@ Elements $5610$ and $5910$ are retrieved either from dataset `total_trade_cpc_m4
      
 : (#tab:input) Input elements, and fundamental quantities they are used to compute.
 
+As explained in Section \@ref(inputelements), these input elements are contained in the `ti_input_elements` datatable to avoid their hardcoding in the plugins.
+
 
 ## From input to output elements
 
@@ -39,25 +41,25 @@ Once the input elements listed Table \@ref(tab:input) are retrieved, they can be
 
 The process required the introduction of $9$ new elements and $6$ new subelements into `measuredElementTrade` codelist. They are listed in Table \@ref(tab:output).
 
-Each of the $9$ elements correspond to a different indicator. The BTD indicator has two different forms -- for when the reporter country acts either as an importing or as an exporting country -- so two subelements are created: $504.01$ and $504.02$, respectively. The other two subelements of element $504$, which are $504.\text{d}1$ and $504.\text{d}2,$ are used to (possibly) include the corresponding differences between imports and exports; they are computed as the numerator of Equation (2.4) and Equation (2.5), respectively. Finally, since RCA is calculated for each commodity for both the agricultural aggregates F1881 and F1882, subelements $509.01$ (for aggregate F1881) and $509.02$ (for aggregate F1882) are also introduced.
+Each of the $9$ elements correspond to a different indicator. The BTD has two different forms -- for when the reporter country acts either as an importing or as an exporting country -- so two subelements are created: $504.01$ and $504.02$, respectively. The other two subelements of element $504$, which are $504.\text{d}1$ and $504.\text{d}2,$ are used to (possibly) include the corresponding differences between imports and exports; they are computed as the numerator of Equation (2.4) and Equation (2.5), respectively. Finally, since RCA is calculated for each commodity for both the agricultural aggregates T0010 and F1882, subelements $509.01$ (for aggregate T0010) and $509.02$ (for aggregate F1882) are also introduced.
   
     **Code**                      **Description**                    **Unit**  
   -----------------  -------------------------------------------  ----------- 
-    $501$                      Import Dependency Ratio             Index    
-    $502$                       Self-Sufficiency Ratio             Index    
+    $501$                      Import Dependency Ratio             Unitless    
+    $502$                       Self-Sufficiency Ratio             Unitless    
     $503$              Share of Agricultural Exports to GDP        $\%$    
-    $504$                Bilateral Trade Discrepancy index         Index
-    $504.01$           BTD index - Importing reporter country      Index
-    $504.\text{d}1$  BT difference - Importing reporter country    $1000\$$ 
-    $504.02$           BTD index - Exporting reporter country      Index
-    $504.\text{d}2$  BT difference - Exporting reporter country    $1000\$$ 
-    $505$                 Agricultural Trade Openness index        Index    
-    $506$                       Terms of Trade index               $\%$    
-    $507$                 Import Market Concentration index        Index    
-    $508$                 Export Market Concentration index        Index    
-    $509$               Revealed Comparative Advantage index       Index  
-    $509.01$                RCA index - F1881 aggregate            Index
-    $509.02$                RCA index - F1882 aggregate            Index
+    $504$                Bilateral Trade Discrepancy               Index
+    $504.01$           Bilateral Trade Discrepancy - Importer      Index
+    $504.\text{d}1$         BT difference - Importer               $1000\$$ 
+    $504.02$           Bilateral Trade Discrepancy - Exporter      Index
+    $504.\text{d}2$         BT difference - Exporter               $1000\$$ 
+    $505$                 Agricultural Trade Openness              Index    
+    $506$                       Terms of Trade                     $\%$    
+    $507$                 Import Market Concentration              Index    
+    $508$                 Export Market Concentration              Index    
+    $509$               Revealed Comparative Advantage             Index  
+    $509.01$       Revealed Comparative Advantage - T0010          Index
+    $509.02$       Revealed Comparative Advantage - F1882          Index
 
 : (#tab:output) Output elements.
 

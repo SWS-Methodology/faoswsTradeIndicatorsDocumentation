@@ -6,20 +6,22 @@ The indicators are organized into $6$ plugins based on their similarity in formu
 #### List of plugins {-}
 The list of plugins, and the set of indicators each of them allows to compute, is the following:\
 1. **IDR-SSR plugin**: Import Dependency Ratio and Self-Sufficiency Ratio.\
-2. **SAE-ATO plugin**: Share of Agricultural Exports to GDP and Agricultural Trade Openness index.\
-3. **BTD plugin**: Bilateral Trade Discrepancy index.\
-4. **TOT plugin**: Terms of Trade index.\
-5. **IMC-EMC plugin**: Import Market Concentration index and Export Market Concentration index.\
-6. **RCA plugin**: Revealed Comparative Advantage index.
+2. **SAE-ATO plugin**: Share of Agricultural Exports to GDP and Agricultural Trade Openness.\
+3. **BTD plugin**: Bilateral Trade Discrepancy.\
+4. **TOT plugin**: Terms of Trade.\
+5. **IMC-EMC plugin**: Import Market Concentration and Export Market Concentration.\
+6. **RCA plugin**: Revealed Comparative Advantage.
 
 #### Common features {-} 
 All the plugins have the following common features:\
 - The use of the reporter countries datatable (see Section \@ref(reporters)) to select countries and years.\
 - The use of the key commodities datatable (see Section \@ref(keycommodities)) to select items.\
+- The use of the input elements datatable (see Section \@(inputelements)) to select elements while avoiding hardcoding.\
 - The generation of NAs for all cases with incomplete (having missing values) or all-zero (all quantities are zero) input data.\
 - One or more mandatory input parameters to choose to get input data either from the Disseminated Datasets domain or from the specialized ones. These parameters are of type *list*, and the choice is between `Disseminated` and the applicable specialized domain. The only exception is the TOT plugin; see Section \@ref(tot) for details.\
 - Two optional input parameters, `Starting year` and `Ending year`, to refine the time span for which the plugins are computed. They are of type numeric and can be defined with any value between $1900$ and $2100$, as long as the `Starting year` is smaller than the `Ending year`.\
 - An optional input parameter, `Limit results to query only`, to choose whether to limit the results to the keys from the query only or not. It is of type *list*, and the choice is between `Yes` and `No`. If it is equal to `Yes`, then the results are returned only for the keys included in the query. If `No`, the results are returned for all available data. Since, in the output datasets, the roots for each dimension usually include more keys than those actually considered for the computations (because the latter have been refined using the input datatables), some further adjustments are necessary when `Limit results to query only` is `Yes`. Specifically, any key from the query that is not included in those considered for the computations will be ignored. If all the keys from the query are not included in those considered for the computations, a warning will be thrown and the results will be returned for all available data.
+- A "wipe data" feature that is applied whenever `Limit results to query only` is `No`. It removes all pre-existing data points corresponding to the years for which the plugin is run.  
 
 
 
@@ -29,7 +31,7 @@ The main features of the IDR-SSR plugin are the following:\
 - **Name:** `ti_IDR_SSR`.\
 - **Input datasets:** `aproduction_validated` and `trade_crops_livestock_disseminated` from`disseminated` when working with disseminated data, `aproduction` from `agriculture` and `total_trade_cpc_m49` from `trade` otherwise.\
 - **Input elements:** $5510$, $5610$, and $5910$.\
-- **Input datatables:** `reporters_by_year_new_version` from `trade-reports` and `key_commodities_codes` from `trade-reference-files`.\
+- **Input datatables:** `reporters_by_year_trade_indicators` from `trade-reports`, `key_commodities_codes` and `ti_input_elements` from `trade-reference-files`.\
 - **Output elements:** $501$ and $502$.\
 - **Output dataset:** `trade_indicators`.
 
@@ -45,7 +47,7 @@ The main features of the SAE-ATO plugin are the following:\
 - **Name:** `ti_SAE_ATO`.\
 - **Input datasets:** `trade_crops_livestock_disseminated` from `disseminated` and `ess_eco_macroind_complete` from `macro_stats` when working with disseminated data, `total_trade_cpc_m49` from `trade` and `ess_eco_macroind_complete` from `macro_stats` otherwise.\
 - **Input elements:** $5622$, $5922$, and $8003$.\
-- **Input datatables:** `reporters_by_year_new_version` from `trade-reports`.\
+- **Input datatables:** `reporters_by_year_trade_indicators` from `trade-reports` and `ti_input_elements` from `trade-reference-files`.\
 - **Output elements:** $503$ and $505$.\
 - **Output dataset:** `trade_indicators`.
 
@@ -60,7 +62,7 @@ The main features of the BTD plugin are the following:\
 - **Name:** `ti_BTD`.\
 - **Input dataset:** `completed_tf_cpc_m49` from `trade`.\
 - **Input elements:** $5610$ and $5910$.\
-- **Input datatables:** `reporters_by_year_new_version` from `trade-reports` and `key_commodities_codes` from `trade-reference-files`.\
+- **Input datatables:** `reporters_by_year_trade_indicators` from `trade-reports`, `key_commodities_codes` and `ti_input_elements` from `trade-reference-files`.\
 - **Output elements:** $504.01$ and $504.02$, and possibly intermediate quantities $504.\text{d}1$ and $504.\text{d}2$.\
 - **Output dataset:** `trade_indicators_bilateral`.
 
@@ -77,7 +79,7 @@ The main features of the TOT plugin are the following:\
 - **Name:** `ti_TOT`.\
 - **Input datasets:** `total_trade_cpc_m49` from `trade`.\
 - **Input elements:** $5630$ and $5930$.
-- **Input datatables:** `reporters_by_year_new_version` from `trade-reports` and `key_commodities_codes` from `trade-reference-files`.\
+- **Input datatables:** `reporters_by_year_trade_indicators` from `trade-reports`, `key_commodities_codes` and `ti_input_elements` from `trade-reference-files`.\
 - **Output elements:** $506$.\
 - **Output dataset:** `trade_indicators`.
 
@@ -96,7 +98,7 @@ The main features of the IMC-EMC plugin are the following:\
 - **Name:** `ti_IMC_EMC`.\
 - **Input datasets:** `trade_crops_livestock_disseminated` from `disseminated` when working with disseminated data, `total_trade_cpc_m49` from `trade` otherwise.\
 - **Input elements:** $5610$, $5910$, $5622$, and $5922$.\
-- **Input datatables:** `reporters_by_year_new_version` from `trade-reports`, `key_commodities_codes` and `trade_outlier_country_thresholds` from `trade-reference-files`.\
+- **Input datatables:** `reporters_by_year_trade_indicators` from `trade-reports`, and `key_commodities_codes`, `trade_outlier_country_thresholds`, and `ti_input_elements` from `trade-reference-files`.\
 - **Output elements:** $507$ and $508$.\
 - **Output dataset:** `trade_indicators`.
 
@@ -105,7 +107,9 @@ include reporter countries.
 
 In this plugin, the IMC and EMC indicators only consider above-thresholds countries for all the variables in the formula, i.e., the sum cannot include countries that are below the threshold. However, to ensure complete consistency between the number of terms in the sum and the total number of importing/exporting countries, it also excludes from the latter the countries for which the import/export value is NA (as they are excluded from the sum).
 
-Whenever the total number of importing/exporting countries is $1$, the value of the indicator is $0/0=$ NaN. In this case, the plugin returns $1$, because the concentration is maximal.
+Whenever the total number of importing/exporting countries is $1$, the value of the indicator is $0/0=$ NaN. In this case, the plugin returns $1$ as it implies the maximum concentration.
+
+IMC and EMC values characterize items and measure their global market concentration. This also implies that they are shared across all countries. For this reason, the plugin assigns IMC and EMC values not to countries but to the geographical aggregate `World [1]`.
 
 The workflow of the IMC-EMC plugin is summarized in Figure \@ref(fig:plugin5).
 
@@ -116,9 +120,9 @@ The workflow of the IMC-EMC plugin is summarized in Figure \@ref(fig:plugin5).
 
 The main features of the RCA plugin are the following:\
 - **Name:** `ti_RCA`.\
-- **Input datasets:** `trade_crops_livestock_disseminated` from`disseminated` when working with disseminated data, `total_trade_cpc_m49` from `trade` otherwise.\
+- **Input datasets:** `trade_crops_livestock_disseminated` from `disseminated` when working with disseminated data, `total_trade_cpc_m49` from `trade` otherwise.\
 - **Input elements:** $5622$ and $5922$.\
-- **Input datatables:** `reporters_by_year_new_version` from `trade-reports` and `key_commodities_codes` from `trade-reference-files`.\
+- **Input datatables:** `reporters_by_year_trade_indicators` from `trade-reports`, `key_commodities_codes` and `ti_input_elements` from `trade-reference-files`.\
 - **Output elements:** $509.01$ and $509.02$.\
 - **Output dataset:** `trade_indicators`.
 

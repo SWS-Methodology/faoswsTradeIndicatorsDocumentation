@@ -40,11 +40,11 @@ The plugins for this process heavily rely on auxiliary information stored in thr
 ### Reporter countries {#reporters}
 
 
-The reporter countries datatable is used in all the plugins to select which countries should be included in the computation of the indicators.
+The reporter countries datatable is used in all plugins to select which countries should be included in the computation of the indicators.
 
 The key information to identify the datatable is the following:\
 - Domain id: `trade-reports`.\
-- Datatable id: `reporters_by_year_new_version`.
+- Datatable id: `reporters_by_year_trade_indicators`.
 
 As depicted in Figure \@ref(fig:reporters), the datatable has many columns:\
 - `m49`, which contains the country's m49 code.\
@@ -64,7 +64,7 @@ While the number of reporter countries may vary for different years, the total n
 ### Key commodities {#keycommodities}
 
 
-The key commodities datatable is used in all the plugins to select which commodities should be included in the computation of the indicators.
+The key commodities datatable is used in all plugins to select which commodities should be included in the computation of the indicators.
 
 The key information to identify the datatable is the following:\
 - Domain id: `trade-reference-files`.\
@@ -98,3 +98,20 @@ The datatable exclusively includes countries. Each country has its own threshold
 
 If a country lacks a corresponding threshold entry in the datatable, a conventional threshold value of $1000$ is applied.
 
+
+### Input elements {#inputelements}
+
+The input elements datatable is used in all plugins to avoid hardcoding the input elements.
+
+The key information to identify the datatable is the following:\
+- Domain id: `trade-reference-files`.\
+- Datatable id: `ti_input_elements`.
+
+As depicted in Figure \@ref(fig:inputelements), the datatable has three columns:\
+- `plugin`, which denotes the involved plugin.\
+- `data_source`, which specifies the data sources for each plugin.\
+- `element`, which includes the input element(s) for each data source and each plugin.
+
+![(\#fig:inputelements) Figure 3.5. Sample screenshot of the input elements datatable in SWS.](./images/dt_input_elements.png)
+
+Each plugin reads the datatable, focuses on its own rows, and retrieves all input elements for each data source.

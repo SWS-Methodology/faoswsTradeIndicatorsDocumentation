@@ -55,3 +55,10 @@ eq:tot
 eq:imc
 eq:emc
 eq:rca
+bilateral-trade-discrepancy
+agricultural-trade-openness
+terms-of-trade-indicator
+import-market-concentration
+export-market-concentration
+revealed-comparative-advantage
+fig:inputelements

@@ -30,12 +30,12 @@ The list of trade indicators integrated into this process is the following:\
 1. Import Dependency Ratio.\
 2. Self-Sufficiency Ratio.\
 3. Share of Agricultural Exports to GDP.\
-4. Bilateral Trade Discrepancy index.\
-5. Agricultural Trade Openness index.\
-6. Terms of Trade index.\
-7. Import Market Concentration index.\
-8. Export Market Concentration index.\
-9. Revealed Comparative Advantage index.\
+4. Bilateral Trade Discrepancy.\
+5. Agricultural Trade Openness.\
+6. Terms of Trade.\
+7. Import Market Concentration.\
+8. Export Market Concentration.\
+9. Revealed Comparative Advantage.\
 
 
 ## Summary
